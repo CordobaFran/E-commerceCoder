@@ -1,4 +1,4 @@
-# ProyectoFinal - Tercero
+# ProyectoFinal - Ecommerce
 
 ## Lista de comandos utilizados en local :
 

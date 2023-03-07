@@ -1,7 +1,7 @@
 const path = require('path')
 
 const { fork } = require('child_process')
-const forked = fork(path.resolve(__dirname, '../routes/random/numerosRandom.js'))
+const forked = fork(path.resolve(__dirname, '../routes/apiMock/numerosRandom.js'))
 
 const randomForked = (req, res) => {
     const qty = () => {

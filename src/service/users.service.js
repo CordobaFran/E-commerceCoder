@@ -19,7 +19,21 @@ class UsersService {
 
     async getUserById(id) {
         try {
-            const user = await this.usersDAOs.getById(id)
+            const userById = await this.usersDAOs.getById(id)
+            const user = {
+                _id: userById._id,
+                username: userById.username,
+                email: userById.email,
+                admin: userById.admin,
+                name: userById.name,
+                age: userById.age,
+                phoneNumber: userById.phoneNumber,
+                address: userById.address,
+                profilePicture: userById.profilePicture,
+                cartId: userById.cartId,
+                addedDate: userById.addedDate,
+            }
+
             return user
 
         } catch (error) {
@@ -69,7 +83,7 @@ class UsersService {
         try {
             const find = await this.usersDAOs.findUserAndEmail(username, email)
             return find
-            
+
         } catch (error) {
             loggerError.error(error)
         }

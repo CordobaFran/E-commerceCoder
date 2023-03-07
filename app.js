@@ -10,14 +10,15 @@ const cookieParser = require('cookie-parser')
 
 const handlebars = require('express-handlebars')
 
-const routerProducts = require('./src/routes/apiMock/apiMock.routes')
+
+//ROUTES PATHS
 const mainProducts = require('./src/routes/productos/main.routes.js')
 const routerLogin = require('./src/routes/login/login.routes')
 const routerRegister = require('./src/routes/register/register.routes')
 const routerInfo = require('./src/routes/info/info.routes')
-const randomRoutes = require('./src/routes/random/random.routes')
 const routerCart = require('./src/routes/cart/cart.routes')
 const apiMockProducts = require('./src/routes/apiMock/apiMock.routes')
+const userRoute = require('./src/routes/user/user.routes')
 
 
 const { passport } = require('./src/middleware/passport.middleware')
@@ -69,12 +70,11 @@ app.use(passport.initialize())
 app.use(passport.session())
 app.use(cookieParser())
 
-app.use('/api', randomRoutes)
-app.use('/api', routerProducts)
 app.use('/api', apiMockProducts)
 app.use('/auth', routerLogin)
 app.use('/auth', routerRegister)
 app.use('/cart',auth, routerCart)
+app.use('/user', userRoute)
 app.use('/', routerInfo)
 app.use('/', auth, mainProducts)
 // app.use('/', mainProducts)

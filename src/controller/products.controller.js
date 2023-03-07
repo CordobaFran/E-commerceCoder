@@ -2,7 +2,7 @@ const { ProductsService } = require('../service/products.service')
 const productos = new ProductsService()
 
 
-const getNewProduct= async (req, res) => {
+const getNewProduct = async (req, res) => {
     res.render('productAdd')
 }
 
@@ -17,6 +17,7 @@ const getOnlyProducts = async (req, res) => {
 const getProducts = async (req, res) => {
 
     const products = await productos.getAllProducts()
+    const userId = req.user._id
 
     let productExists = false
     // const username = users.find(user => user.id === req.session.passport.user).username
@@ -25,7 +26,7 @@ const getProducts = async (req, res) => {
 
     await products ? productExists = true : productExists = false
 
-    res.render('main', { products, productExists, username })
+    res.render('main', { products, productExists, username, userId })
     // res.json( {products}) 
 }
 

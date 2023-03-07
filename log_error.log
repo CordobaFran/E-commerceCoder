@@ -493,3 +493,10 @@
 ( 2023-03-06 05:15:07 ) error : Error con codigo: 1
 ( 2023-03-06 08:08:24 ) error : Error con codigo: 1
 ( 2023-03-06 11:05:41 ) error : Error con codigo: 1
+( 2023-03-07 11:25:05 ) error : Error con codigo: 1
+( 2023-03-07 11:26:13 ) error : Error con codigo: 1
+( 2023-03-07 11:27:55 ) error : Error con codigo: 1
+( 2023-03-07 11:28:57 ) error : Cast to ObjectId failed for value "id=6405f67ca8d89d05ba8a04c5" (type string) at path "_id" for model "users"
+( 2023-03-07 11:48:34 ) error : Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"
+( 2023-03-07 11:50:09 ) error : Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"
+( 2023-03-07 11:50:34 ) error : Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"

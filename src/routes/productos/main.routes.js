@@ -7,9 +7,9 @@ router.get("/products", getOnlyProducts)
 
 router.get("/products/new", getNewProduct)
 
-router.get("/", getProducts)
-
 router.get("/product/:id", getProductId)
+
+router.get("/", getProducts)
 
 router.put("/:id", editProduct)
 

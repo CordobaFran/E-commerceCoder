@@ -1,0 +1,79 @@
+<div class="container w-50 border mt-5 shadow rounded">
+    <h1 class="mt-5 mx-5 h3 text-left">Register</h1>
+    <form class="m-5" action="./register" enctype="multipart/form-data" method="post">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" aria-describedby="userHelp" value="admin" required="true">
+            <div id="userHelp" class="form-text">Ingrese su nombre de usuario</div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" value="email@example.com">
+            <div id="emailHelp" class="form-text">Ingrese su e-mail</div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" aria-describedby="passHelp" value="admin" >
+            <div id="passHelp" class="form-text">Ingrese su una contraseña</div>
+        </div>
+        <div class="row">
+            <div class="col-5 mb-3">
+                <label for="inputNombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" aria-describedby="userName" placeholder="Ramon Perez">
+                <div id="userName" class="form-text">Ingrese su Nombre</div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="inputEdad" class="form-label">Edad</label>
+                <input type="number" class="form-control" id="age" name="age" aria-describedby="userEdad">
+                <div id="userEdad" class="form-text">Ingrese su Edad</div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="inputTelefono" class="form-label">Teléfono</label>
+                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" aria-describedby="userPhone">
+                <div id="userPhone" class="form-text">Ingrese su Teléfono</div>
+            </div>
+            <div class="col-12 mb-3">
+                <label for="inputAddress" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="address" name="address" aria-describedby="userAddress" placeholder="Acevedo 500">
+                <div id="userAddress" class="form-text">Ingrese su Dirección</div>
+            </div>
+            <div class="border m-2 shadow-sm rounded">
+                <div class="col-12 mb-3">
+                    <div class="text-center">
+                        <label for="inputAddress" class="form-label my-3 mx-auto text-center">Foto de perfil</label>
+                    </div>
+                    <input type="file" class="form-control" id="photoUpload" name="file" aria-describedby="userPhotoUpload">
+                    <div id="userPhotoUpload" class="form-text">Ingrese su foto de perfil</div>
+                </div>
+                 <div class="col-12 mb-3">
+                    {{!-- <label for="inputAddress" class="form-label">o URL</label> --}}
+                    <input type="text" class="form-control" id="photoUrl" name="profileUrl" aria-describedby="userPhotoUrl">
+                    <div id="userPhotoUrl" class="form-text">O ingrese Link con su foto de perfil</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-check mt-3">
+            <input class="form-check-input" type="radio" name="admin" id="flexRadioDefault1" value="true">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Admin
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="admin" id="flexRadioDefault2" value="false" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+                User
+            </label>
+        </div>
+
+        <!-- <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+        <div class="text-center">
+            <button type="submit" class="mx-auto mt-5 btn btn-primary">Register</button>
+        </div>
+        <div class="text-center mt-5">
+            <span>¿Tienes una cuenta? Ingresa </span><a href="./login">aqui</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,94 @@
+<section>
+    <div>
+      <div class="container mt-5 shadow col-11 col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-9 my-auto">
+            <img class='d-flex mx-auto w-50' src= {{ product.img }} alt="prodcuctImage-{{ product.title }}" />
+          </div>
+          <div class="col-12 col-md-3 border rounded">
+            <h1 class='font-weight-bold text-left my-5 h4'>{{ product.title }}</h1>
+            <h2 class='text-center my-5 h3'>$ {{product.price}}</h2>
+            <div class='my-5'>
+              <p class='text-center h4'>Opiniones</p>
+              <p class='text-center font-weight-bold h3'>{{product.rating.rate}}</p>
+              <p class='text-center'>promedio entre <span class='font-weight-bold'>{{product.rating.count}}</span> opiniones</p>
+            </div>
+            {{!-- {!qtyAdded ? --}}
+            <div class='text-center'>
+                <p class='h5 font-weight-normal my-3'>Cantidad: <span class='h5 font-weight-normal my-3' id="qty"></span></p>
+                    <button onClick="onDecrement()" class="btn__mod btn btn-info mx-2">-</button>
+                    <button onClick="onAdd()" class="btn__mod btn btn-info mx-2">+</button>
+                <p class='font-weight-normal my-2'>{{product.stock}} disponibles</p>
+                <br></br>
+                <button onClick='handleAdd("{{product.id}}")' class="btn btn-info my-3 w-100">Agregar al carrito</button>
+            </div>
+              {{!-- :
+              <>
+                <div>
+                  <div class='text-center'>
+                    <button onClick={handleFinish} class="btn btn-danger my-2 w-100">Terminar mi Compra</button>
+                  </div>
+                  <div class='text-center'>
+                    <button onClick={handleContinue} class="btn btn-success my-2 w-100">Seguir Comprando</button>
+                  </div>
+                </div>
+              </>
+            } --}}
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 border rounded">
+            <h2 class='my-3'>Descripción</h2>
+            <h3 class='d-flex mx-auto h5'>{{product.description}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<script>
+    let counter = 1
+
+    setQty(counter)
+    
+    const onAdd = () => {
+        if (counter < {{product.stock}}) {
+            counter += 1
+            setQty(counter)
+        }
+        console.log(counter)
+    }
+    const onDecrement = () => {
+        if (counter > 1) {
+            counter -= 1
+            setQty(counter)
+        }
+        console.log(counter)
+    }
+
+    const handleAdd = (id) => {
+        if(counter <= {{product.stock}}) {
+            onConfirm(id, counter)
+        }
+    }
+
+    function setQty(qty){
+        let div = document.querySelector("#qty")
+        div.innerHTML = qty      
+    }
+
+    function onConfirm(id, counter){
+        const updatedData = { productId: id, qty: counter };
+        console.log(updatedData)
+
+        fetch('/cart/{{cartId}}', {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(updatedData)
+        })
+        .then(data => console.log(data))
+        .catch(error => console.error(error));
+    } 
+
+</script>

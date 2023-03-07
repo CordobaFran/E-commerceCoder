@@ -1,0 +1,25 @@
+<div class="container w-50 border mt-5 shadow rounded">
+    <h1 class="mt-5 mx-5 h3 text-left">Login</h1>
+    <form class="m-5" action="./login" method="post">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username or E-mail</label>
+            <input type="text" class="form-control" id="username" name="username" aria-describedby="userHelp" value="admin">
+            <div id="userHelp" class="form-text">Ingrese su nombre de usuario o E-mail</div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" value="admin">
+        </div>
+        <!-- <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+        <button type="submit" class="btn btn-primary">Login</button>
+        <div class="text-end">
+            <a href="./github"><span class="mx-2 text-dark">Login with Github</span><img style="width: 45px;" class="img-thumbnail" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="githublogo" srcset=""></a>
+        </div>
+        <div class="text-center mt-5">
+            <span>¿No estas registrado? Registrate </span><a href="./register">aqui</a>
+        </div>
+    </form>
+</div>

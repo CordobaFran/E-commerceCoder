@@ -1,0 +1,18 @@
+<div class="container m-5">
+    <h2 class="alert alert-success" >Logout Successful</h2>
+    <p class="h4 text-center fw-bold"> Hasta luego</p>
+    <br>
+    <p class="h4 text-center"> Redirect in <span id="countdown">5</span> seconds</p>
+    <script>
+        setTimeout(()=>{
+            window.location.href = './login'
+        }, 5000)
+
+        let time = 5
+        setInterval(()=>{
+            time--
+            document.getElementById("countdown").innerHTML = time
+        },1000)
+            
+    </script>
+</div>

@@ -1,0 +1,495 @@
+( 2023-02-28 03:19:28 ) error : Error con codigo: 1
+( 2023-02-28 05:27:34 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-02-28 05:27:34 ) error : this.Model is not a constructor
+( 2023-02-28 05:27:34 ) error : this.Model is not a constructor
+( 2023-02-28 05:27:34 ) error : this.Model is not a constructor
+( 2023-02-28 05:27:34 ) error : this.Model is not a constructor
+( 2023-02-28 05:27:34 ) error : this.Model is not a constructor
+( 2023-02-28 05:27:34 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-02-28 05:28:33 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-02-28 05:28:33 ) error : this.Model is not a constructor
+( 2023-02-28 05:28:33 ) error : this.Model is not a constructor
+( 2023-02-28 05:28:33 ) error : this.Model is not a constructor
+( 2023-02-28 05:28:33 ) error : this.Model is not a constructor
+( 2023-02-28 05:28:33 ) error : this.Model is not a constructor
+( 2023-02-28 05:28:33 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-02-28 05:28:35 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-02-28 05:28:35 ) error : this.Model is not a constructor
+( 2023-02-28 05:28:35 ) error : this.Model is not a constructor
+( 2023-02-28 05:28:35 ) error : this.Model is not a constructor
+( 2023-02-28 05:28:35 ) error : this.Model is not a constructor
+( 2023-02-28 05:28:35 ) error : this.Model is not a constructor
+( 2023-02-28 05:28:35 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-01 21:41:56 ) error : Cast to ObjectId failed for value "productos-test" (type string) at path "_id" for model "products"
+( 2023-03-01 21:42:13 ) error : Cast to ObjectId failed for value "productos-test" (type string) at path "_id" for model "products"
+( 2023-03-01 21:42:23 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-01 21:42:23 ) error : this.Model is not a constructor
+( 2023-03-01 21:42:23 ) error : this.Model is not a constructor
+( 2023-03-01 21:42:23 ) error : this.Model is not a constructor
+( 2023-03-01 21:42:23 ) error : this.Model is not a constructor
+( 2023-03-01 21:42:23 ) error : this.Model is not a constructor
+( 2023-03-01 21:42:23 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:18:12 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 01:18:12 ) error : this.Model is not a constructor
+( 2023-03-02 01:18:12 ) error : this.Model is not a constructor
+( 2023-03-02 01:18:12 ) error : this.Model is not a constructor
+( 2023-03-02 01:18:12 ) error : this.Model is not a constructor
+( 2023-03-02 01:18:12 ) error : this.Model is not a constructor
+( 2023-03-02 01:18:12 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:29:29 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 01:29:29 ) error : this.Model is not a constructor
+( 2023-03-02 01:29:29 ) error : this.Model is not a constructor
+( 2023-03-02 01:29:29 ) error : this.Model is not a constructor
+( 2023-03-02 01:29:29 ) error : this.Model is not a constructor
+( 2023-03-02 01:29:29 ) error : this.Model is not a constructor
+( 2023-03-02 01:29:29 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:29:57 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 01:29:57 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 01:29:57 ) error : this.Model is not a constructor
+( 2023-03-02 01:29:57 ) error : this.Model is not a constructor
+( 2023-03-02 01:29:57 ) error : this.Model is not a constructor
+( 2023-03-02 01:29:57 ) error : this.Model is not a constructor
+( 2023-03-02 01:29:57 ) error : this.Model is not a constructor
+( 2023-03-02 01:29:57 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:30:53 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:30:53 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 01:30:53 ) error : this.Model is not a constructor
+( 2023-03-02 01:30:53 ) error : this.Model is not a constructor
+( 2023-03-02 01:30:53 ) error : this.Model is not a constructor
+( 2023-03-02 01:30:53 ) error : this.Model is not a constructor
+( 2023-03-02 01:30:53 ) error : this.Model is not a constructor
+( 2023-03-02 01:30:53 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:31:32 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:31:32 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 01:31:32 ) error : this.Model is not a constructor
+( 2023-03-02 01:31:32 ) error : this.Model is not a constructor
+( 2023-03-02 01:31:32 ) error : this.Model is not a constructor
+( 2023-03-02 01:31:32 ) error : this.Model is not a constructor
+( 2023-03-02 01:31:32 ) error : this.Model is not a constructor
+( 2023-03-02 01:31:32 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:34:18 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:34:18 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 01:34:18 ) error : this.Model is not a constructor
+( 2023-03-02 01:34:18 ) error : this.Model is not a constructor
+( 2023-03-02 01:34:18 ) error : this.Model is not a constructor
+( 2023-03-02 01:34:18 ) error : this.Model is not a constructor
+( 2023-03-02 01:34:18 ) error : this.Model is not a constructor
+( 2023-03-02 01:34:18 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:34:35 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 01:34:35 ) error : this.Model is not a constructor
+( 2023-03-02 01:34:35 ) error : this.Model is not a constructor
+( 2023-03-02 01:34:35 ) error : this.Model is not a constructor
+( 2023-03-02 01:34:35 ) error : this.Model is not a constructor
+( 2023-03-02 01:34:35 ) error : this.Model is not a constructor
+( 2023-03-02 01:34:35 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:35:03 ) error : this.Model is not a constructor
+( 2023-03-02 01:35:03 ) error : this.Model is not a constructor
+( 2023-03-02 01:35:03 ) error : this.Model is not a constructor
+( 2023-03-02 01:35:03 ) error : this.Model is not a constructor
+( 2023-03-02 01:35:03 ) error : this.Model is not a constructor
+( 2023-03-02 01:35:48 ) error : this.Model is not a constructor
+( 2023-03-02 01:35:48 ) error : this.Model is not a constructor
+( 2023-03-02 01:35:48 ) error : this.Model is not a constructor
+( 2023-03-02 01:35:48 ) error : this.Model is not a constructor
+( 2023-03-02 01:35:48 ) error : this.Model is not a constructor
+( 2023-03-02 01:35:59 ) error : this.Model is not a constructor
+( 2023-03-02 01:35:59 ) error : this.Model is not a constructor
+( 2023-03-02 01:35:59 ) error : this.Model is not a constructor
+( 2023-03-02 01:35:59 ) error : this.Model is not a constructor
+( 2023-03-02 01:35:59 ) error : this.Model is not a constructor
+( 2023-03-02 01:36:01 ) error : this.Model is not a constructor
+( 2023-03-02 01:36:01 ) error : this.Model is not a constructor
+( 2023-03-02 01:36:01 ) error : this.Model is not a constructor
+( 2023-03-02 01:36:01 ) error : this.Model is not a constructor
+( 2023-03-02 01:36:01 ) error : this.Model is not a constructor
+( 2023-03-02 01:36:04 ) error : this.Model is not a constructor
+( 2023-03-02 01:36:04 ) error : this.Model is not a constructor
+( 2023-03-02 01:36:04 ) error : this.Model is not a constructor
+( 2023-03-02 01:36:04 ) error : this.Model is not a constructor
+( 2023-03-02 01:36:04 ) error : this.Model is not a constructor
+( 2023-03-02 01:39:04 ) error : this.Model is not a constructor
+( 2023-03-02 01:39:04 ) error : this.Model is not a constructor
+( 2023-03-02 01:39:04 ) error : this.Model is not a constructor
+( 2023-03-02 01:39:04 ) error : this.Model is not a constructor
+( 2023-03-02 01:39:04 ) error : this.Model is not a constructor
+( 2023-03-02 01:40:27 ) error : this.Model is not a constructor
+( 2023-03-02 01:40:27 ) error : this.Model is not a constructor
+( 2023-03-02 01:40:27 ) error : this.Model is not a constructor
+( 2023-03-02 01:40:27 ) error : this.Model is not a constructor
+( 2023-03-02 01:40:27 ) error : this.Model is not a constructor
+( 2023-03-02 01:45:14 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 01:45:14 ) error : this.Model is not a constructor
+( 2023-03-02 01:45:14 ) error : this.Model is not a constructor
+( 2023-03-02 01:45:14 ) error : this.Model is not a constructor
+( 2023-03-02 01:45:14 ) error : this.Model is not a constructor
+( 2023-03-02 01:45:14 ) error : this.Model is not a constructor
+( 2023-03-02 01:45:14 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:45:19 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 01:45:19 ) error : this.Model is not a constructor
+( 2023-03-02 01:45:19 ) error : this.Model is not a constructor
+( 2023-03-02 01:45:19 ) error : this.Model is not a constructor
+( 2023-03-02 01:45:19 ) error : this.Model is not a constructor
+( 2023-03-02 01:45:19 ) error : this.Model is not a constructor
+( 2023-03-02 01:45:19 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:45:27 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 01:45:27 ) error : this.Model is not a constructor
+( 2023-03-02 01:45:27 ) error : this.Model is not a constructor
+( 2023-03-02 01:45:27 ) error : this.Model is not a constructor
+( 2023-03-02 01:45:27 ) error : this.Model is not a constructor
+( 2023-03-02 01:45:27 ) error : this.Model is not a constructor
+( 2023-03-02 01:45:27 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:51:38 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 01:51:38 ) error : this.Model is not a constructor
+( 2023-03-02 01:51:38 ) error : this.Model is not a constructor
+( 2023-03-02 01:51:38 ) error : this.Model is not a constructor
+( 2023-03-02 01:51:38 ) error : this.Model is not a constructor
+( 2023-03-02 01:51:38 ) error : this.Model is not a constructor
+( 2023-03-02 01:51:38 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:53:37 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 01:53:37 ) error : this.Model is not a constructor
+( 2023-03-02 01:53:37 ) error : this.Model is not a constructor
+( 2023-03-02 01:53:37 ) error : this.Model is not a constructor
+( 2023-03-02 01:53:37 ) error : this.Model is not a constructor
+( 2023-03-02 01:53:37 ) error : this.Model is not a constructor
+( 2023-03-02 01:53:37 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:54:32 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 01:54:32 ) error : this.Model is not a constructor
+( 2023-03-02 01:54:32 ) error : this.Model is not a constructor
+( 2023-03-02 01:54:32 ) error : this.Model is not a constructor
+( 2023-03-02 01:54:32 ) error : this.Model is not a constructor
+( 2023-03-02 01:54:32 ) error : this.Model is not a constructor
+( 2023-03-02 01:54:32 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:59:40 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 01:59:40 ) error : this.Model is not a constructor
+( 2023-03-02 01:59:40 ) error : this.Model is not a constructor
+( 2023-03-02 01:59:40 ) error : this.Model is not a constructor
+( 2023-03-02 01:59:40 ) error : this.Model is not a constructor
+( 2023-03-02 01:59:40 ) error : this.Model is not a constructor
+( 2023-03-02 01:59:40 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 01:59:58 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 01:59:58 ) error : this.Model is not a constructor
+( 2023-03-02 01:59:58 ) error : this.Model is not a constructor
+( 2023-03-02 01:59:58 ) error : this.Model is not a constructor
+( 2023-03-02 01:59:58 ) error : this.Model is not a constructor
+( 2023-03-02 01:59:58 ) error : this.Model is not a constructor
+( 2023-03-02 01:59:58 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 02:00:41 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-02 02:00:41 ) error : this.Model is not a constructor
+( 2023-03-02 02:00:41 ) error : this.Model is not a constructor
+( 2023-03-02 02:00:41 ) error : this.Model is not a constructor
+( 2023-03-02 02:00:41 ) error : this.Model is not a constructor
+( 2023-03-02 02:00:41 ) error : this.Model is not a constructor
+( 2023-03-02 02:00:41 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-02 20:05:42 ) error : Error con codigo: 1
+( 2023-03-02 20:07:42 ) error : users validation failed: age: Path `age` (123) is more than maximum allowed value (3)., phoneNumber: Path `phoneNumber` (123123123) is more than maximum allowed value (100).
+( 2023-03-02 20:29:02 ) error : Error con codigo: 1
+( 2023-03-02 20:33:49 ) error : Error con codigo: 1
+( 2023-03-02 20:34:58 ) error : Error con codigo: 1
+( 2023-03-02 20:35:23 ) error : Error con codigo: 1
+( 2023-03-02 20:40:08 ) error : Error con codigo: 1
+( 2023-03-02 20:41:38 ) error : Error con codigo: 1
+( 2023-03-02 20:45:43 ) error : Error con codigo: 1
+( 2023-03-02 20:46:17 ) error : Error con codigo: 1
+( 2023-03-02 20:46:54 ) error : Error con codigo: 1
+( 2023-03-02 20:56:04 ) error : next is not a function
+( 2023-03-02 20:56:27 ) error : next is not a function
+( 2023-03-02 20:59:46 ) error : Error con codigo: 1
+( 2023-03-02 21:00:27 ) error : Error con codigo: 1
+( 2023-03-02 21:00:54 ) error : Error con codigo: 1
+( 2023-03-02 21:02:50 ) error : Error con codigo: 1
+( 2023-03-02 21:08:34 ) error : Error con codigo: 1
+( 2023-03-02 21:10:52 ) error : Error con codigo: 1
+( 2023-03-02 21:11:24 ) error : Error con codigo: 1
+( 2023-03-02 21:19:53 ) error : users validation failed: age: Path `age` (30) is more than maximum allowed value (3)., phoneNumber: Path `phoneNumber` (1136456799) is more than maximum allowed value (100).
+( 2023-03-02 21:21:12 ) error : users validation failed: age: Path `age` (30) is more than maximum allowed value (3)., phoneNumber: Path `phoneNumber` (1136456799) is more than maximum allowed value (100).
+( 2023-03-02 23:15:55 ) error : Cast to ObjectId failed for value "randoms" (type string) at path "_id" for model "products"
+( 2023-03-03 13:47:12 ) error : Cast to ObjectId failed for value "carts" (type string) at path "_id" for model "products"
+( 2023-03-03 13:50:58 ) error : Error con codigo: 1
+( 2023-03-03 13:51:32 ) error : Error con codigo: 1
+( 2023-03-03 13:53:40 ) error : Error con codigo: 1
+( 2023-03-04 00:33:25 ) error : loggerError is not defined
+( 2023-03-04 00:35:44 ) error : loggerError is not defined
+( 2023-03-04 00:41:46 ) error : loggerError is not defined
+( 2023-03-04 00:42:13 ) error : loggerError is not defined
+( 2023-03-04 00:44:34 ) error : loggerError is not defined
+( 2023-03-04 00:48:37 ) error : loggerError is not defined
+( 2023-03-04 00:49:30 ) error : loggerError is not defined
+( 2023-03-04 00:50:14 ) error : loggerError is not defined
+( 2023-03-04 00:54:11 ) error : loggerError is not defined
+( 2023-03-04 00:55:53 ) error : loggerError is not defined
+( 2023-03-04 01:01:52 ) error : loggerError is not defined
+( 2023-03-04 01:04:03 ) error : loggerError is not defined
+( 2023-03-04 01:06:06 ) error : loggerError is not defined
+( 2023-03-04 01:09:15 ) error : loggerError is not defined
+( 2023-03-04 01:09:39 ) error : hola isValidPassword is not defined
+( 2023-03-04 01:29:48 ) error : Operation `users.findOne()` buffering timed out after 10000ms
+( 2023-03-04 01:29:58 ) error : Operation `users.insertOne()` buffering timed out after 10000ms
+( 2023-03-04 01:32:29 ) error : Operation `users.findOne()` buffering timed out after 10000ms
+( 2023-03-04 01:32:39 ) error : Operation `users.insertOne()` buffering timed out after 10000ms
+( 2023-03-04 01:33:15 ) error : Error con codigo: 1
+( 2023-03-04 01:34:13 ) error : Operation `users.findOne()` buffering timed out after 10000ms
+( 2023-03-04 01:34:23 ) error : Operation `users.insertOne()` buffering timed out after 10000ms
+( 2023-03-04 01:39:00 ) error : Operation `users.findOne()` buffering timed out after 10000ms
+( 2023-03-04 01:39:10 ) error : Operation `users.insertOne()` buffering timed out after 10000ms
+( 2023-03-04 01:41:32 ) error : Operation `users.findOne()` buffering timed out after 10000ms
+( 2023-03-04 01:41:42 ) error : Operation `users.insertOne()` buffering timed out after 10000ms
+( 2023-03-04 01:46:24 ) error : Operation `users.findOne()` buffering timed out after 10000ms
+( 2023-03-04 01:54:25 ) error : collection is not defined
+( 2023-03-04 01:55:14 ) error : collection is not defined
+( 2023-03-04 01:55:14 ) error : Cast to ObjectId failed for value "saddd" (type string) at path "_id" for model "products"
+( 2023-03-04 01:55:22 ) error : collection is not defined
+( 2023-03-04 01:55:22 ) error : Cast to ObjectId failed for value "saddd" (type string) at path "_id" for model "products"
+( 2023-03-04 01:55:44 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:44 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:45 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:45 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:45 ) error : this.Model is not a constructor
+( 2023-03-04 01:55:45 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:46 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:46 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:48 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:48 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:49 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:49 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:50 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:50 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:51 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:51 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:52 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:52 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:53 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:53 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:54 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:54 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:55 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:55 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:56 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:56 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:57 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:57 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:58 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:55:58 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:56:00 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:56:00 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:56:01 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:56:01 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:56:02 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:56:02 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:56:03 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:56:03 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 01:56:09 ) error : Cast to ObjectId failed for value "saddd" (type string) at path "_id" for model "products"
+( 2023-03-04 01:56:11 ) error : collection is not defined
+( 2023-03-04 01:56:11 ) error : Cast to ObjectId failed for value "saddd" (type string) at path "_id" for model "products"
+( 2023-03-04 01:59:14 ) error : Cast to ObjectId failed for value "saddd" (type string) at path "_id" for model "products"
+( 2023-03-04 01:59:17 ) error : collection is not defined
+( 2023-03-04 01:59:17 ) error : Cast to ObjectId failed for value "saddd" (type string) at path "_id" for model "products"
+( 2023-03-04 01:59:31 ) error : Cast to ObjectId failed for value "saddd" (type string) at path "_id" for model "products"
+( 2023-03-04 01:59:38 ) error : products validation failed: value: Cast to Number failed for value "asdas" (type string) at path "value"
+( 2023-03-04 01:59:38 ) error : Cast to ObjectId failed for value "saddd" (type string) at path "_id" for model "products"
+( 2023-03-04 02:15:37 ) error : products validation failed: value: Cast to Number failed for value "asdas" (type string) at path "value"
+( 2023-03-04 02:15:37 ) error : Cast to ObjectId failed for value "saddd" (type string) at path "_id" for model "products"
+( 2023-03-04 02:16:03 ) error : Cast to ObjectId failed for value "productos-test" (type string) at path "_id" for model "products"
+( 2023-03-04 02:17:40 ) error : Cast to ObjectId failed for value "saddd" (type string) at path "_id" for model "products"
+( 2023-03-04 02:18:40 ) error : Cast to ObjectId failed for value "saddd" (type string) at path "_id" for model "products"
+( 2023-03-04 02:18:49 ) error : collection is not defined
+( 2023-03-04 02:18:49 ) error : Cast to ObjectId failed for value "saddd" (type string) at path "_id" for model "products"
+( 2023-03-04 02:18:52 ) error : collection is not defined
+( 2023-03-04 02:18:52 ) error : Cast to ObjectId failed for value "saddd" (type string) at path "_id" for model "products"
+( 2023-03-04 02:21:36 ) error : Cast to ObjectId failed for value "saddd" (type string) at path "_id" for model "products"
+( 2023-03-04 02:21:38 ) error : collection is not defined
+( 2023-03-04 02:21:38 ) error : Cast to ObjectId failed for value "saddd" (type string) at path "_id" for model "products"
+( 2023-03-04 02:21:47 ) error : collection is not defined
+( 2023-03-04 02:21:47 ) error : collection is not defined
+( 2023-03-04 02:21:47 ) error : collection is not defined
+( 2023-03-04 02:21:47 ) error : collection is not defined
+( 2023-03-04 02:21:47 ) error : collection is not defined
+( 2023-03-04 02:21:47 ) error : collection is not defined
+( 2023-03-04 02:22:06 ) error : collection is not defined
+( 2023-03-04 02:22:06 ) error : collection is not defined
+( 2023-03-04 02:22:06 ) error : collection is not defined
+( 2023-03-04 02:22:06 ) error : collection is not defined
+( 2023-03-04 02:22:06 ) error : collection is not defined
+( 2023-03-04 02:22:06 ) error : collection is not defined
+( 2023-03-04 02:22:49 ) error : collection is not defined
+( 2023-03-04 02:22:49 ) error : collection is not defined
+( 2023-03-04 02:22:49 ) error : collection is not defined
+( 2023-03-04 02:22:49 ) error : collection is not defined
+( 2023-03-04 02:22:49 ) error : collection is not defined
+( 2023-03-04 02:22:49 ) error : collection is not defined
+( 2023-03-04 02:23:18 ) error : collection is not defined
+( 2023-03-04 02:23:18 ) error : collection is not defined
+( 2023-03-04 02:23:18 ) error : collection is not defined
+( 2023-03-04 02:23:18 ) error : collection is not defined
+( 2023-03-04 02:23:18 ) error : collection is not defined
+( 2023-03-04 02:23:19 ) error : collection is not defined
+( 2023-03-04 02:23:53 ) error : collection is not defined
+( 2023-03-04 02:24:44 ) error : collection is not defined
+( 2023-03-04 02:25:01 ) error : collection is not defined
+( 2023-03-04 02:26:08 ) error : products validation failed: value: Cast to Number failed for value "123fsa" (type string) at path "value"
+( 2023-03-04 02:26:16 ) error : collection is not defined
+( 2023-03-04 02:26:44 ) error : collection is not defined
+( 2023-03-04 02:26:44 ) error : collection is not defined
+( 2023-03-04 02:26:44 ) error : collection is not defined
+( 2023-03-04 02:26:44 ) error : collection is not defined
+( 2023-03-04 02:26:44 ) error : collection is not defined
+( 2023-03-04 02:26:44 ) error : collection is not defined
+( 2023-03-04 02:27:02 ) error : collection is not defined
+( 2023-03-04 02:27:03 ) error : collection is not defined
+( 2023-03-04 02:27:03 ) error : collection is not defined
+( 2023-03-04 02:27:03 ) error : collection is not defined
+( 2023-03-04 02:27:03 ) error : collection is not defined
+( 2023-03-04 02:27:03 ) error : collection is not defined
+( 2023-03-04 02:27:31 ) error : collection is not defined
+( 2023-03-04 02:27:31 ) error : collection is not defined
+( 2023-03-04 02:27:31 ) error : collection is not defined
+( 2023-03-04 02:27:31 ) error : collection is not defined
+( 2023-03-04 02:27:31 ) error : collection is not defined
+( 2023-03-04 02:27:31 ) error : collection is not defined
+( 2023-03-04 02:28:01 ) error : collection is not defined
+( 2023-03-04 02:28:01 ) error : collection is not defined
+( 2023-03-04 02:28:01 ) error : collection is not defined
+( 2023-03-04 02:28:01 ) error : collection is not defined
+( 2023-03-04 02:28:01 ) error : collection is not defined
+( 2023-03-04 02:28:01 ) error : collection is not defined
+( 2023-03-04 02:30:30 ) error : holaa collection is not defined
+( 2023-03-04 02:30:30 ) error : collection is not defined
+( 2023-03-04 02:30:30 ) error : collection is not defined
+( 2023-03-04 02:30:30 ) error : collection is not defined
+( 2023-03-04 02:30:30 ) error : collection is not defined
+( 2023-03-04 02:30:30 ) error : collection is not defined
+( 2023-03-04 02:31:11 ) error : collection is not defined
+( 2023-03-04 02:31:11 ) error : collection is not defined
+( 2023-03-04 02:31:11 ) error : collection is not defined
+( 2023-03-04 02:31:11 ) error : collection is not defined
+( 2023-03-04 02:31:11 ) error : collection is not defined
+( 2023-03-04 02:31:11 ) error : collection is not defined
+( 2023-03-04 02:31:26 ) error : collection is not defined
+( 2023-03-04 02:32:49 ) error : collection is not defined
+( 2023-03-04 02:33:28 ) error : collection is not defined
+( 2023-03-04 02:37:35 ) error : Cast to ObjectId failed for value "api" (type string) at path "_id" for model "products"
+( 2023-03-04 02:46:52 ) error : Cast to ObjectId failed for value "carts" (type string) at path "_id" for model "products"
+( 2023-03-04 02:47:51 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-04 02:47:51 ) error : this.Model is not a constructor
+( 2023-03-04 02:47:51 ) error : this.Model is not a constructor
+( 2023-03-04 02:47:51 ) error : this.Model is not a constructor
+( 2023-03-04 02:47:51 ) error : this.Model is not a constructor
+( 2023-03-04 02:47:51 ) error : this.Model is not a constructor
+( 2023-03-04 02:47:51 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 02:48:12 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-04 02:48:12 ) error : this.Model is not a constructor
+( 2023-03-04 02:48:12 ) error : this.Model is not a constructor
+( 2023-03-04 02:48:12 ) error : this.Model is not a constructor
+( 2023-03-04 02:48:12 ) error : this.Model is not a constructor
+( 2023-03-04 02:48:12 ) error : this.Model is not a constructor
+( 2023-03-04 02:48:12 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 02:54:54 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-04 02:54:54 ) error : this.Model is not a constructor
+( 2023-03-04 02:54:54 ) error : this.Model is not a constructor
+( 2023-03-04 02:54:54 ) error : this.Model is not a constructor
+( 2023-03-04 02:54:54 ) error : this.Model is not a constructor
+( 2023-03-04 02:54:54 ) error : this.Model is not a constructor
+( 2023-03-04 02:54:54 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 02:58:02 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-04 02:58:02 ) error : this.Model is not a constructor
+( 2023-03-04 02:58:02 ) error : this.Model is not a constructor
+( 2023-03-04 02:58:02 ) error : this.Model is not a constructor
+( 2023-03-04 02:58:02 ) error : this.Model is not a constructor
+( 2023-03-04 02:58:02 ) error : this.Model is not a constructor
+( 2023-03-04 02:58:02 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 02:59:56 ) error : Cannot read properties of undefined (reading 'deleteMany')
+( 2023-03-04 02:59:56 ) error : this.Model is not a constructor
+( 2023-03-04 02:59:56 ) error : this.Model is not a constructor
+( 2023-03-04 02:59:56 ) error : this.Model is not a constructor
+( 2023-03-04 02:59:56 ) error : this.Model is not a constructor
+( 2023-03-04 02:59:56 ) error : this.Model is not a constructor
+( 2023-03-04 02:59:56 ) error : Cannot read properties of undefined (reading 'find')
+( 2023-03-04 03:33:30 ) error : Error con codigo: 1
+( 2023-03-05 23:38:13 ) error : Cast to ObjectId failed for value "alt="prodcuctImage"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:38:32 ) error : Cast to ObjectId failed for value "alt="prodcuctImage"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:38:47 ) error : Cast to ObjectId failed for value "alt="prodcuctImage"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:38:48 ) error : Cast to ObjectId failed for value "alt="prodcuctImage"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:39:53 ) error : Cast to ObjectId failed for value "alt="prodcuctImage"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:40:07 ) error : Cast to ObjectId failed for value "alt="prodcuctImage"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:40:08 ) error : Cast to ObjectId failed for value "alt="prodcuctImage"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:40:15 ) error : Cast to ObjectId failed for value "alt="prodcuctImage"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:45:56 ) error : Cast to ObjectId failed for value "{" (type string) at path "_id" for model "products"
+( 2023-03-05 23:45:58 ) error : Cast to ObjectId failed for value "{" (type string) at path "_id" for model "products"
+( 2023-03-05 23:46:16 ) error : Cast to ObjectId failed for value "{" (type string) at path "_id" for model "products"
+( 2023-03-05 23:46:18 ) error : Cast to ObjectId failed for value "{" (type string) at path "_id" for model "products"
+( 2023-03-05 23:46:32 ) error : Cast to ObjectId failed for value "{" (type string) at path "_id" for model "products"
+( 2023-03-05 23:46:33 ) error : Cast to ObjectId failed for value "{" (type string) at path "_id" for model "products"
+( 2023-03-05 23:46:34 ) error : Cast to ObjectId failed for value "{" (type string) at path "_id" for model "products"
+( 2023-03-05 23:46:34 ) error : Cast to ObjectId failed for value "{" (type string) at path "_id" for model "products"
+( 2023-03-05 23:46:35 ) error : Cast to ObjectId failed for value "{" (type string) at path "_id" for model "products"
+( 2023-03-05 23:48:41 ) error : Cast to ObjectId failed for value "alt="prodcuctImage"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:48:42 ) error : Cast to ObjectId failed for value "alt="prodcuctImage"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:48:59 ) error : Cast to ObjectId failed for value "alt="prodcuctImage"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:49:08 ) error : Cast to ObjectId failed for value "alt="prodcuctImage"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:51:37 ) error : Cast to ObjectId failed for value "alt="prodcuctImage"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:51:58 ) error : Cast to ObjectId failed for value "alt="prodcuctImage"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:53:00 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:53:01 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:53:01 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:53:02 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:53:02 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:53:17 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:53:18 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:53:25 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:53:26 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:54:58 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:55:51 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:57:01 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:59:35 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-05 23:59:46 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:00:32 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:01:20 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:02:30 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:03:39 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:04:20 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:05:40 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:06:21 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:06:25 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:06:28 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:07:40 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:09:06 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:09:07 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:09:33 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:09:52 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:09:57 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:13:26 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:13:31 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:13:40 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:13:41 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:13:41 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:13:42 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:13:48 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:13:49 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:13:50 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:13:56 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:14:31 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:14:32 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:14:41 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:14:43 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:15:00 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:22:31 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:24:51 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:25:33 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:25:52 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:25:53 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:25:54 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 00:26:01 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 01:01:36 ) error : Cannot read properties of null (reading 'urlImg')
+( 2023-03-06 01:01:36 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 01:01:36 ) error : Cannot read properties of undefined (reading 'urlImg')
+( 2023-03-06 01:01:38 ) error : Cannot read properties of null (reading 'urlImg')
+( 2023-03-06 01:01:38 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-06 01:01:38 ) error : Cannot read properties of undefined (reading 'urlImg')
+( 2023-03-06 02:44:54 ) error : Error con codigo: 1
+( 2023-03-06 03:16:26 ) error : Error con codigo: 1
+( 2023-03-06 03:16:42 ) error : Error con codigo: 1
+( 2023-03-06 04:51:20 ) error : Cannot read properties of undefined (reading 'create')
+( 2023-03-06 04:52:14 ) error : Cannot read properties of undefined (reading 'create')
+( 2023-03-06 04:53:01 ) error : Cannot read properties of undefined (reading 'create')
+( 2023-03-06 05:15:07 ) error : Error con codigo: 1
+( 2023-03-06 08:08:24 ) error : Error con codigo: 1
+( 2023-03-06 11:05:41 ) error : Error con codigo: 1

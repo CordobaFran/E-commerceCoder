@@ -1,0 +1,16 @@
+<section class="m-4">
+    <div>
+        <div class="my-5 alert alert-primary" role="alert">
+            <span class="h4">Bienvenido "{{ username }}"</span>
+            {{!-- <form action="/logout" method="get"> --}}
+                <a href="./auth/logout" class="float-end"><button type="submit" class="btn btn-danger">Logout</button></a>
+            {{!-- </form> --}}
+        </div>
+    </div>
+ 
+    {{!-- <a class="btn btn-primary mt-5" href="./test" role="button">Ir a Productos</a> --}}
+</section>
+<hr>
+{{> productos}}
+<hr>
+{{> chat}}

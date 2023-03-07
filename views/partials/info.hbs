@@ -1,0 +1,44 @@
+<section class="m-4 align-items-center col-10">
+            <table class="table align-items-center m-5 table table-striped table-hover">
+                <theadclass="thead-dark">
+                    <tr>
+                        <th scope="col" class="px-5">Nombre</th>
+                        <th scope="col" class="px-5">Descripcion</th>
+                    </tr>
+                </thead>
+                <tbody id="info">
+                    <tr>
+                        <th scope="row">Argumentos de entrada</th>
+                        <td>{{data.args}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Nombre de la plataforma</th>
+                        <td>{{data.os}}</td>
+                    </tr>           
+                    <tr>
+                        <th scope="row">Version de node.js</th>
+                        <td>{{data.nodeVersion}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Memoria total reservada (rss)</th>
+                        <td>{{data.memoryUsage.rss}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">path de ejecución</th>
+                        <td>{{data.executePath}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Process id</th>
+                        <td>{{data.proccesId}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Carpeta del proyecto</th>
+                        <td>{{data.proyectPath}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Cantidad de Cpus</th>
+                        <td>{{data.processorThreads}}</td>
+                    </tr>
+                </tbody>
+            </table>
+</section>

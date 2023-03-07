@@ -1,0 +1,30 @@
+<section class="m-4">
+    {{#if cartExists}}
+            <h1 class="my-5 text-center">Carrito {{id}}</h1>
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th scope="col" class="px-5">Nombre</th>
+                        <th scope="col" class="px-5">Precio</th>
+                        <th scope="col" class="px-5">Imagen</th>
+                    </tr>
+                </thead>
+                <tbody id="cartProducts">
+                    {{#each products}}
+                        <tr>
+                            <th scope="col" class="px-5">{{producto}}</th>
+                            <th scope="col" class="px-5">{{value}}</th>
+                            <th scope="col" class="px-5">{{urlImg}}</th>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            <form class="text-center mt-5" action="./{{id}}" method="post">
+                <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+            </form>
+        {{else}}
+            <div class="alert alert-danger" role="alert">
+                <p>No se encontraron productos</p>
+            </div>
+        {{/if}}
+</section>

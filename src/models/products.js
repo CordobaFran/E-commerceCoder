@@ -8,13 +8,13 @@ const productSchema = new Schema({
     detail: { type: String, require: true, max: 150 },
     value: { type: Number, require: true },
     urlImg: { type: String, require: true },
-    value: { type: Number, require: true },
     rating: {
         rate: {type: Number},
         count: {type: Number}
     },
-    stock: {type: Number}
-    
+    stock: {type: Number},
+    author: {type: String},
+    category: {type: Number}
 })
 
 const ProductsModel = model(productCollection, productSchema)

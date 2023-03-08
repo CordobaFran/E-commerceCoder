@@ -11,6 +11,8 @@
     {{!-- <a class="btn btn-primary mt-5" href="./test" role="button">Ir a Productos</a> --}}
 </section>
 <hr>
-{{> productos}}
+<section class='d-flex flex-row justify-content-around flex-wrap'>
+    {{> productsCard products=products}}
+</section>
 <hr>
 {{> chat}}

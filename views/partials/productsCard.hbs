@@ -1,0 +1,10 @@
+{{#each products}}
+<div class='card my-4 itemCard'>
+    <img src={{img}} class='card-img-top itemCard__img' alt="cardimg"/>
+    <div class='card-body d-flex flex-column'>
+        <h5 class='card-title itemCard__price font-weigth-bold h4'>$ {{price}}</h5>
+        <h1 class='card-title text-center h5'>{{title}}</h1>
+        {{!-- <button class='btn btn-info justify-item-center w-50 mx-auto'>Comprar</button> --}}
+    </div>
+</div>
+{{/each}}

@@ -8,7 +8,22 @@ class ProductsService {
 
     async getAllProducts() {
         try {
-            return await this.productsDAOs.getAll()
+            const productGet = await this.productsDAOs.getAll()
+            const allProducts = productGet.map(data => {
+                return {
+                    id: data._id,
+                    img: data.urlImg,
+                    title: data.product,
+                    price: data.value,
+                    description: data.detail,
+                    rating: {
+                        rate: data.rating.rate,
+                        count: data.rating.count
+                    },
+                    stock: data.stock
+                }
+            })
+            return allProducts
 
         } catch (error) {
             loggerError.error(error)
@@ -24,13 +39,38 @@ class ProductsService {
                 title: productGet.product,
                 price: productGet.value,
                 description: productGet.detail,
-                rating: { 
+                rating: {
                     rate: productGet.rating.rate,
                     count: productGet.rating.count
                 },
                 stock: productGet.stock
             }
             return product
+
+        } catch (error) {
+            loggerError.error(error)
+        }
+    }
+
+    async getProductByUserId(userId) {
+        try {
+            const productGet = await this.productsDAOs.getProductByUserId(userId)
+
+            const productByUser = productGet.map(data => {
+                return {
+                    id: data._id,
+                    img: data.urlImg,
+                    title: data.product,
+                    price: data.value,
+                    description: data.detail,
+                    rating: {
+                        rate: data.rating.rate,
+                        count: data.rating.count
+                    },
+                    stock: data.stock
+                }
+            })
+            return productByUser
 
         } catch (error) {
             loggerError.error(error)

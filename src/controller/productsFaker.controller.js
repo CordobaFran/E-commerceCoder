@@ -3,7 +3,7 @@ const { loggerError } = require('../utils/logger')
 
 const productsFaker = async (req, res, next) => {
 
-    res.status(200).json(await productsCreate(res.req.cant))
+    res.status(200).json(await productsCreate(req.query.cant))
 
 }
 

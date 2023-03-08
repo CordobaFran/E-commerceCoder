@@ -1,0 +1,37 @@
+<div class="m-4" style="max-height: 600px;">
+    {{#if products}}
+            {{!-- <table class="table d-flex flex-column align-items-center">
+                <thead>
+                    <tr>
+                        <th scope="col" class="px-5">Nombre</th>
+                        <th scope="col" class="px-5">Precio</th>
+                        <th scope="col" class="px-5">Imagen</th>
+                    </tr>
+                </thead>
+                <tbody id="cartProducts"> --}}
+                    <div class="container">
+                        {{#each products}}
+                        {{!-- <tr>
+                            <th scope="col" class="px-5">{{title}}</th>
+                            <th scope="col" class="px-5">{{price}}</th>
+                            <th scope="col" class="px-5"><img src="{{img}}" style="width: 100px"></img></th>
+                        </tr> --}}
+                            <a href="/product/{{id}}" class="text-decoration-none text-reset product-box">
+                                <div class="row m-auto border rounded my-2 d-flex p-3 product-box">
+                                    <div class="col-lg-4 fw-bolder align-self-center">{{title}}</div>
+                                    <div class="col-lg-4 text-center fw-bolder align-self-center">$ {{price}}</div>
+                                    <div class="col-lg-4 mx-auto align-self-center" style="width: 100px">
+                                        <img class="img-fluid" src="{{img}}" alt="{{id}}" style="object-fit: cover;"></img>
+                                    </div>
+                                </div>
+                            </a>
+                        {{/each}}
+                    </div>
+                {{!-- </tbody>
+            </table> --}}
+        {{else}}
+            <div class="alert alert-danger" role="alert">
+                <p>No se encontraron productos</p>
+            </div>
+        {{/if}}
+</div>

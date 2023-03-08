@@ -10,7 +10,7 @@ module.exports = class ApiProductosMock extends productos {
     async popular(cant = 5) {
         const nuevos = []
         for (let i = 0; i < cant; i++) {
-            const nuevoProducto = generarProducto()
+            const nuevoProducto = await generarProducto()
             const guardado = this.create(nuevoProducto)
             nuevos.push(await guardado)
         }

@@ -47,3 +47,41 @@
 .time{
     font-size: 12px;
 }
+
+/* product Boxes */
+
+.product-box{
+  box-shadow: 0px 3px 4px #0000001a;
+  transition: box-shadow 0.2s ease-in;
+}
+.product-box:hover{
+  box-shadow: 0px 3px 6px #00000040;
+}
+
+/* ITEM CARD */
+
+.itemCard{
+  max-width: 15rem;
+  box-shadow: 0 0.4rem 4px 1px #1d21241a;
+  cursor: pointer;
+}
+
+.itemCard:hover{
+  box-shadow: 0 0.4rem 4px 1px #1d212442;
+}
+
+.itemCard__img{
+  /* margin: 10px; */
+  padding: 10px;
+  height: 160px;
+  object-fit: contain;
+}
+.itemCard__price{
+  height: 30px;
+  text-align: center;
+}
+
+.itemCard__text{
+  overflow-y: hidden;
+  height: 196px;
+}

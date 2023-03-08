@@ -20,9 +20,13 @@ class UsersService {
     async getUserById(id) {
         try {
             const userById = await this.usersDAOs.getById(id)
+
+            const userLC = userById.username
+            const userUC = userLC.charAt(0).toUpperCase() + userLC.slice(1);
+
             const user = {
                 _id: userById._id,
-                username: userById.username,
+                username: userUC,
                 email: userById.email,
                 admin: userById.admin,
                 name: userById.name,
@@ -35,6 +39,16 @@ class UsersService {
             }
 
             return user
+
+        } catch (error) {
+            loggerError.error(error)
+        }
+    }
+
+    async getProductsById(userId) {
+        try {
+            const userProducts = await this.getProductsById(userId)
+            return userProducts
 
         } catch (error) {
             loggerError.error(error)

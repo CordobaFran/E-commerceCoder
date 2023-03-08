@@ -7,26 +7,20 @@ const getNewProduct = async (req, res) => {
 }
 
 const getOnlyProducts = async (req, res) => {
-    const products = await productos.getAllProducts()
-    let productExists = false
 
-    await products ? productExists = true : productExists = false
-    res.json({ products, productExists })
+    const products = await productos.getAllProducts()
+
+    res.json({ products })
 }
 
 const getProducts = async (req, res) => {
 
     const products = await productos.getAllProducts()
     const userId = req.user._id
-
-    let productExists = false
     // const username = users.find(user => user.id === req.session.passport.user).username
-
     !req.user ? username = "no definido" : username = req.user.username
 
-    await products ? productExists = true : productExists = false
-
-    res.render('main', { products, productExists, username, userId })
+    res.render('main', { products, username, userId })
     // res.json( {products}) 
 }
 

@@ -1,8 +1,19 @@
 const ContenedorMongoDb = require('../../containers/contenedorMongoDb.js')
+const { loggerError } = require('../../utils/logger.js')
 
 module.exports = class ProductosDaoMongoDb extends ContenedorMongoDb {
     constructor() {
         super('products')
+    }
+
+    async getProductByUserId(userId) {
+        try {
+            let productsById = await this.Model.find({ author: userId })
+            return productsById
+
+        } catch (error) {
+            loggerError.error(error)
+        }
     }
 }
 

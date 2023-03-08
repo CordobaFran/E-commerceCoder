@@ -598,3 +598,48 @@
 ( 2023-03-08 04:06:10 ) error : Cannot read properties of undefined (reading 'username')
 ( 2023-03-08 04:28:06 ) error : Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"
 ( 2023-03-08 04:28:06 ) error : Cannot read properties of undefined (reading 'username')
+( 2023-03-08 06:56:14 ) error : Cast to ObjectId failed for value "category" (type string) at path "_id" for model "products"
+( 2023-03-08 06:56:14 ) error : Cannot read properties of undefined (reading '_id')
+( 2023-03-08 06:56:14 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-08 06:56:14 ) error : Cannot read properties of undefined (reading '_id')
+( 2023-03-08 06:56:52 ) error : Error con codigo: 1
+( 2023-03-08 06:57:07 ) error : this.productsDAOs.getProductByUserCategory is not a function
+( 2023-03-08 06:57:45 ) error : this.productsDAOs.getProductByUserCategory is not a function
+( 2023-03-08 06:57:47 ) error : this.productsDAOs.getProductByUserCategory is not a function
+( 2023-03-08 06:58:03 ) error : this.productsDAOs.getProductByUserCategory is not a function
+( 2023-03-08 06:58:06 ) error : this.productsDAOs.getProductByUserCategory is not a function
+( 2023-03-08 07:00:35 ) error : this.productsDAOs.getProductByUserCategory is not a function
+( 2023-03-08 07:01:32 ) error : Cast to ObjectId failed for value "category" (type string) at path "_id" for model "products"
+( 2023-03-08 07:01:32 ) error : Cannot read properties of undefined (reading '_id')
+( 2023-03-08 07:01:32 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-08 07:01:32 ) error : Cannot read properties of undefined (reading '_id')
+( 2023-03-08 07:01:34 ) error : Cast to ObjectId failed for value "category" (type string) at path "_id" for model "products"
+( 2023-03-08 07:01:34 ) error : Cannot read properties of undefined (reading '_id')
+( 2023-03-08 07:01:35 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-08 07:01:35 ) error : Cannot read properties of undefined (reading '_id')
+( 2023-03-08 07:02:26 ) error : Cast to ObjectId failed for value "category" (type string) at path "_id" for model "products"
+( 2023-03-08 07:02:26 ) error : Cannot read properties of undefined (reading '_id')
+( 2023-03-08 07:02:26 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-08 07:02:26 ) error : Cannot read properties of undefined (reading '_id')
+( 2023-03-08 07:02:43 ) error : this.productsDAOs.getProductByUserCategory is not a function
+( 2023-03-08 07:02:47 ) error : this.productsDAOs.getProductByUserCategory is not a function
+( 2023-03-08 07:02:49 ) error : this.productsDAOs.getProductByUserCategory is not a function
+( 2023-03-08 07:03:45 ) error : this.productsDAOs.ProductsByCategory is not a function
+( 2023-03-08 07:05:12 ) error : Cast to Number failed for value "cant=3" (type string) at path "category" for model "products"
+( 2023-03-08 07:05:12 ) error : Cannot read properties of undefined (reading 'map')
+( 2023-03-08 07:05:20 ) error : Cast to ObjectId failed for value "category" (type string) at path "_id" for model "products"
+( 2023-03-08 07:05:20 ) error : Cannot read properties of undefined (reading '_id')
+( 2023-03-08 07:05:21 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-08 07:05:21 ) error : Cannot read properties of undefined (reading '_id')
+( 2023-03-08 07:14:00 ) error : Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"
+( 2023-03-08 07:14:00 ) error : Cannot read properties of undefined (reading 'username')
+( 2023-03-08 07:14:05 ) error : Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"
+( 2023-03-08 07:14:05 ) error : Cannot read properties of undefined (reading 'username')
+( 2023-03-08 07:14:16 ) error : Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"
+( 2023-03-08 07:14:16 ) error : Cannot read properties of undefined (reading 'username')
+( 2023-03-08 07:14:18 ) error : Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"
+( 2023-03-08 07:14:18 ) error : Cannot read properties of undefined (reading 'username')
+( 2023-03-08 07:14:21 ) error : Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"
+( 2023-03-08 07:14:21 ) error : Cannot read properties of undefined (reading 'username')
+( 2023-03-08 07:22:24 ) error : Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"
+( 2023-03-08 07:22:24 ) error : Cannot read properties of undefined (reading 'username')

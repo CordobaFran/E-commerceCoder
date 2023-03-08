@@ -20,7 +20,8 @@ class ProductsService {
                         rate: data.rating.rate,
                         count: data.rating.count
                     },
-                    stock: data.stock
+                    stock: data.stock,
+                    category: data.category
                 }
             })
             return allProducts
@@ -71,6 +72,31 @@ class ProductsService {
                 }
             })
             return productByUser
+
+        } catch (error) {
+            loggerError.error(error)
+        }
+    }
+
+    async getProductByUserCategory(category) {
+        try {
+            const productGet = await this.productsDAOs.getProductByCategory(category)
+            const ProductsByCategory = productGet.map(data => {
+                return {
+                    id: data._id,
+                    img: data.urlImg,
+                    title: data.product,
+                    price: data.value,
+                    description: data.detail,
+                    rating: {
+                        rate: data.rating.rate,
+                        count: data.rating.count
+                    },
+                    stock: data.stock,
+                    category: data.category
+                }
+            })
+            return ProductsByCategory
 
         } catch (error) {
             loggerError.error(error)

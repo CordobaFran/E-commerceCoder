@@ -34,6 +34,13 @@ const getProductId = async (req, res) => {
     // res.json(await productos.getProductById(id))
 }
 
+const getProductByCategory = async (req, res) => {
+    const category = req.query.cat
+    const productByCat = await productos.getProductByUserCategory(category)
+
+    res.status(201).render('productsCategory', { productByCat, category })
+}
+
 const editProduct = async (req, res) => {
     const id = req.params.id
     const productData = req.body
@@ -51,5 +58,6 @@ module.exports = {
     editProduct,
     deleteProduct,
     getOnlyProducts,
-    getNewProduct
+    getNewProduct,
+    getProductByCategory
 }

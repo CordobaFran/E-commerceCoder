@@ -15,6 +15,16 @@ module.exports = class ProductosDaoMongoDb extends ContenedorMongoDb {
             loggerError.error(error)
         }
     }
+
+    async getProductByCategory(category) {
+        try {
+            let productsByCategory = await this.Model.find({ category: category })
+            return productsByCategory
+
+        } catch (error) {
+            loggerError.error(error)
+        }
+    }
 }
 
 // const CreateMongo = new ContenedorMongoDb().createProduct({name: 'peras', value: 125, detail: 'En la pera', urlImg: "https://elegifruta.com.ar/onepage/wp-content/uploads/2017/08/propiedades-de-la-pera.jpg"})

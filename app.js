@@ -75,7 +75,7 @@ app.use('/auth', routerLogin)
 app.use('/auth', routerRegister)
 app.use('/cart', auth, routerCart)
 app.use('/user', auth,  userRoute)
-app.use('/', routerInfo)
+app.use('/', auth, routerInfo)
 app.use('/', auth, mainProducts)
 // app.use('/', mainProducts)
 

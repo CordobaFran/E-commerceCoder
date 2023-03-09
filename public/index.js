@@ -1,69 +1,6 @@
 const socket = io.connect()
 let denormalizado
 
-
-const addProduct = () => {
-    const newProduct = {
-        "product": document.getElementById("product").value,
-        "value": document.getElementById("value").value,
-        "urlImg": document.getElementById("urlImg").value
-    }
-    socket.emit('add-product', newProduct)
-
-    return false
-}
-
-const renderProducts = (data) => {
-    if (data) {
-        const html = data.map((el) => {
-            if (el.urlImg == null || el.urlImg == "") {
-                return (`
-                <a href=${el._id}>
-                    <tr>
-                        <td class="px-5">
-                            <a href=/product/${el._id}>
-                                ${el.product}
-                            </a>
-                        </td>
-                        <td class="px-5">
-                            ${el.value}
-                        </td>
-                        <td class="px-5">
-                            <img src="${"https://ferreteriaelpuente.com.ar/wp-content/uploads/2015/08/sin-imagen.png"}" class="h-auto" style="object-fit: cover; width: 75px;">
-                        </td>
-                    </tr>
-                </a>
-                `)
-            } else {
-                return (`
-                <tr>
-                    <td class="px-5">
-                        <a href=/product/${el._id}>                
-                            ${el.product}
-                        </a>                
-                    </td>
-                        <td class="px-5">
-                            ${el.value}
-                        </td>
-                        <td class="px-5">
-                            <img src="${el.urlImg}" class="h-auto" style="object-fit: cover; width: 75px;">
-                        </td>
-                </tr>
-                `)
-            }
-        }).join(" ")
-        if (document.getElementById('products')) {
-            document.getElementById('products').innerHTML = html
-        }
-    } else {
-        console.warn("No hay productos")
-    }
-}
-
-socket.on("products-sv", data => {
-    renderProducts(data)
-})
-
 //----Carritos----
 const renderCarts = (cartsData) => {
 
@@ -195,3 +132,70 @@ socket.on('messages-sv', data => {
     // console.log(data, "sv");
     renderMessages(denormalizado.posts[0].messages)
 })
+
+
+//------------------------ Function to add product by socket -------------------------------
+// const addProduct = () => {
+//     const newProduct = {
+//         "product": document.getElementById("product").value,
+//         "value": document.getElementById("value").value,
+//         "urlImg": document.getElementById("urlImg").value
+//     }
+//     socket.emit('add-product', newProduct)
+
+//     return false
+// }
+
+
+//------------------------ Renderizado de productos en tiempo real -------------------------------
+
+// const renderProducts = (data) => {
+//     if (data) {
+//         const html = data.map((el) => {
+//             if (el.urlImg == null || el.urlImg == "") {
+//                 return (`
+//                 <a href=${el._id}>
+//                     <tr>
+//                         <td class="px-5">
+//                             <a href=/product/${el._id}>
+//                                 ${el.product}
+//                             </a>
+//                         </td>
+//                         <td class="px-5">
+//                             ${el.value}
+//                         </td>
+//                         <td class="px-5">
+//                             <img src="${"https://ferreteriaelpuente.com.ar/wp-content/uploads/2015/08/sin-imagen.png"}" class="h-auto" style="object-fit: cover; width: 75px;">
+//                         </td>
+//                     </tr>
+//                 </a>
+//                 `)
+//             } else {
+//                 return (`
+//                 <tr>
+//                     <td class="px-5">
+//                         <a href=/product/${el._id}>                
+//                             ${el.product}
+//                         </a>                
+//                     </td>
+//                         <td class="px-5">
+//                             ${el.value}
+//                         </td>
+//                         <td class="px-5">
+//                             <img src="${el.urlImg}" class="h-auto" style="object-fit: cover; width: 75px;">
+//                         </td>
+//                 </tr>
+//                 `)
+//             }
+//         }).join(" ")
+//         if (document.getElementById('products')) {
+//             document.getElementById('products').innerHTML = html
+//         }
+//     } else {
+//         console.warn("No hay productos")
+//     }
+// }
+
+// socket.on("products-sv", data => {
+//     renderProducts(data)
+// })

@@ -41,6 +41,13 @@ const getProductByCategory = async (req, res) => {
     res.status(201).render('productsCategory', { productByCat, category })
 }
 
+const postProducts = async (req,res) => {
+    const product = req.body
+    await productos.createProduct(product)
+
+    res.status(201).json({status: "product added"})
+}
+
 const editProduct = async (req, res) => {
     const id = req.params.id
     const productData = req.body
@@ -59,5 +66,6 @@ module.exports = {
     deleteProduct,
     getOnlyProducts,
     getNewProduct,
-    getProductByCategory
+    getProductByCategory,
+    postProducts
 }

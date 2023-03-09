@@ -647,3 +647,21 @@
 ( 2023-03-08 07:27:03 ) error : Cannot read properties of undefined (reading 'username')
 ( 2023-03-08 07:28:09 ) error : Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"
 ( 2023-03-08 07:28:09 ) error : Cannot read properties of undefined (reading 'username')
+( 2023-03-08 07:32:17 ) error : Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"
+( 2023-03-08 07:32:17 ) error : Cannot read properties of undefined (reading 'username')
+( 2023-03-08 07:32:55 ) error : Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"
+( 2023-03-08 07:32:55 ) error : Cannot read properties of undefined (reading 'username')
+( 2023-03-08 07:32:56 ) error : Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"
+( 2023-03-08 07:32:56 ) error : Cannot read properties of undefined (reading 'username')
+( 2023-03-09 00:40:26 ) error : Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"
+( 2023-03-09 00:40:26 ) error : Cannot read properties of undefined (reading 'username')
+( 2023-03-09 00:40:29 ) error : Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"
+( 2023-03-09 00:40:29 ) error : Cannot read properties of undefined (reading 'username')
+( 2023-03-09 02:08:12 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-"" (type string) at path "_id" for model "products"
+( 2023-03-09 02:08:12 ) error : Cannot read properties of undefined (reading '_id')
+( 2023-03-09 02:38:27 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-avion" (type string) at path "_id" for model "products"
+( 2023-03-09 02:38:27 ) error : Cannot read properties of undefined (reading '_id')
+( 2023-03-09 02:39:12 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-avion" (type string) at path "_id" for model "products"
+( 2023-03-09 02:39:12 ) error : Cannot read properties of undefined (reading '_id')
+( 2023-03-09 02:50:54 ) error : Cast to ObjectId failed for value "class='card-img-top" (type string) at path "_id" for model "products"
+( 2023-03-09 02:50:54 ) error : Cannot read properties of undefined (reading '_id')

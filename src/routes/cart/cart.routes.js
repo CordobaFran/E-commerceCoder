@@ -3,6 +3,7 @@ const router = Router()
 
 const { cartsAll, cartId, cartCheckout, cartAddproduct } = require('../../controller/carts.controller')
 
+//Momentaneamente esta ruta esta para desarrollo
 router.get('/', cartsAll)
 
 router.get('/:id', cartId)

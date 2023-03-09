@@ -14,8 +14,8 @@ const cartsAll = async (req, res) => {
     let cartExists = false
     await !carts ? cartExists = false : cartExists = true
 
-    // res.status(200).render('cart', { cartExists, carts })
-    res.json(carts)
+    res.status(200).render('cart', { cartExists, carts })
+    // res.json(carts)
 }
 
 const cartId = async (req, res) => {

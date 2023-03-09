@@ -42,10 +42,25 @@ const getProductByCategory = async (req, res) => {
 }
 
 const postProducts = async (req,res) => {
-    const product = req.body
+    const userId = req.user._id
+    let product = req.body
+    
+    if (!req.file) {
+        productPic = product.urlImg
+    } else {
+        let filePath = req.file.path
+        let publicFilePath = filePath.substring(6)
+        productPic = publicFilePath
+    }
+
+    product = {
+        ...product,
+        urlImg: productPic,
+        author: userId
+    }
     await productos.createProduct(product)
 
-    res.status(201).json({status: "product added"})
+    res.status(201).redirect(`/user?id=${userId}`)
 }
 
 const editProduct = async (req, res) => {

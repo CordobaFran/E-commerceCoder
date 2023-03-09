@@ -5,7 +5,14 @@ const { UsersService } = require('../service/users.service')
 const usersService = new UsersService()
 
 const userController = async (req, res) => {
-    const userId = req.query.id
+    
+    let userId = null
+    if (!req.query.id){
+        userId = req.user._id
+    } else {
+        userId = req.query.id
+    }
+
     const userData = await usersService.getUserById(userId)
 
     const userProducts = await productsService.getProductByUserId(userId)

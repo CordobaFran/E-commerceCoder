@@ -665,3 +665,32 @@
 ( 2023-03-09 02:39:12 ) error : Cannot read properties of undefined (reading '_id')
 ( 2023-03-09 02:50:54 ) error : Cast to ObjectId failed for value "class='card-img-top" (type string) at path "_id" for model "products"
 ( 2023-03-09 02:50:54 ) error : Cannot read properties of undefined (reading '_id')
+( 2023-03-13 03:31:54 ) error : Error con codigo: 1
+( 2023-03-13 03:34:23 ) error : Error con codigo: 1
+( 2023-03-13 03:37:44 ) error : The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
+( 2023-03-13 03:53:17 ) error : Error con codigo: 1
+( 2023-03-13 03:59:36 ) error : Error con codigo: 1
+( 2023-03-13 04:00:13 ) error : Error con codigo: 1
+( 2023-03-13 04:00:23 ) error : Error con codigo: 1
+( 2023-03-13 04:02:41 ) error : Error con codigo: 1
+( 2023-03-13 04:03:48 ) error : Error con codigo: 1
+( 2023-03-13 04:04:09 ) error : Error con codigo: 1
+( 2023-03-13 04:04:16 ) error : Error con codigo: 1
+( 2023-03-13 04:04:31 ) error : Error con codigo: 1
+( 2023-03-13 04:05:01 ) error : Error con codigo: 1
+( 2023-03-13 04:06:35 ) error : Error con codigo: 1
+( 2023-03-13 04:06:49 ) error : Error con codigo: 1
+( 2023-03-13 04:07:49 ) error : Error con codigo: 1
+( 2023-03-13 04:07:59 ) error : Error con codigo: 1
+( 2023-03-13 04:16:32 ) error : Error con codigo: 1
+( 2023-03-13 04:18:23 ) error : Error con codigo: 1
+( 2023-03-13 04:19:18 ) error : Error con codigo: 1
+( 2023-03-13 04:35:48 ) error : The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
+( 2023-03-13 05:02:48 ) error : Error con codigo: 1
+( 2023-03-13 05:12:54 ) error : Error con codigo: 1
+( 2023-03-13 05:14:13 ) error : Error con codigo: 1
+( 2023-03-13 05:14:51 ) error : Error con codigo: 1
+( 2023-03-13 05:33:08 ) error : Error con codigo: 1
+( 2023-03-13 05:54:57 ) error : Error con codigo: 1
+( 2023-03-13 05:55:54 ) error : Error con codigo: 1
+( 2023-03-13 05:58:12 ) error : Cannot read properties of undefined (reading 'split')

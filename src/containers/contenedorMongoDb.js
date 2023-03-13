@@ -5,6 +5,7 @@ const { loggerConsole, loggerError, loggerWarn } = require('../utils/logger')
 const { ProductsModel } = require('../models/products')
 const { CartsModel } = require('../models/carts')
 const { UsersModel } = require('../models/users')
+const { MsgsModel } = require('../models/msgs.js')
 
 
 class Products {
@@ -22,6 +23,9 @@ class Products {
 
         } else if (collection === 'users') {
             this.Model = UsersModel
+
+        } else if (collection === 'msgs') {
+            this.Model = MsgsModel
 
         } else {
             this.Model = ProductsModel

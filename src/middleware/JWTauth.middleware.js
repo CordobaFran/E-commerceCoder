@@ -6,13 +6,13 @@ const { generateToken } = require('./JWTgenerate.middleware')
 async function auth(req, res, next) {
     const authHeader = req.cookies["authorization"]
     // console.log(authHeader);
-    
+
     if (!authHeader) {
         return res.status(401).json({
             error: 'not authenticated'
         })
     }
-    
+
     const token = authHeader
 
     //REGENERATE TOKEN ON REFRESH
@@ -29,6 +29,15 @@ async function auth(req, res, next) {
             })
         }
         req.user = decoded.data
+
+        const userChat = {
+            id: req.user._id,
+            alias: req.user.username,
+            avatar: req.user.profilePicture
+        }
+        
+
+        res.cookie('userChat', JSON.stringify(userChat))
 
         next()
     })

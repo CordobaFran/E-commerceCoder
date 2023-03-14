@@ -694,3 +694,16 @@
 ( 2023-03-13 05:54:57 ) error : Error con codigo: 1
 ( 2023-03-13 05:55:54 ) error : Error con codigo: 1
 ( 2023-03-13 05:58:12 ) error : Cannot read properties of undefined (reading 'split')
+( 2023-03-14 07:24:38 ) error : Cast to ObjectId failed for value "null" (type string) at path "_id" for model "products"
+( 2023-03-14 07:25:26 ) error : Cast to ObjectId failed for value "null" (type string) at path "_id" for model "products"
+( 2023-03-14 07:25:40 ) error : Cast to ObjectId failed for value "null" (type string) at path "_id" for model "products"
+( 2023-03-14 07:26:39 ) error : Cast to ObjectId failed for value "null" (type string) at path "_id" for model "products"
+( 2023-03-14 07:26:41 ) error : Cast to ObjectId failed for value "null" (type string) at path "_id" for model "products"
+( 2023-03-14 07:26:53 ) error : Cast to ObjectId failed for value "null" (type string) at path "_id" for model "products"
+( 2023-03-14 07:27:20 ) error : Cast to ObjectId failed for value "null" (type string) at path "_id" for model "products"
+( 2023-03-14 08:47:20 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-Cockpit" (type string) at path "_id" for model "products"
+( 2023-03-14 08:47:20 ) error : Cannot read properties of undefined (reading '_id')
+( 2023-03-14 08:47:24 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-Cockpit" (type string) at path "_id" for model "products"
+( 2023-03-14 08:47:24 ) error : Cannot read properties of undefined (reading '_id')
+( 2023-03-14 08:48:10 ) error : Cast to ObjectId failed for value "alt="prodcuctImage-Cockpit" (type string) at path "_id" for model "products"
+( 2023-03-14 08:48:10 ) error : Cannot read properties of undefined (reading '_id')

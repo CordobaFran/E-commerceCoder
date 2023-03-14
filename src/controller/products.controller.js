@@ -63,9 +63,34 @@ const postProducts = async (req,res) => {
     res.status(201).redirect(`/user?id=${userId}`)
 }
 
+const getEditProduct = async (req, res) => {
+    const id = req.params.id
+    const cartId = req.user.cartId
+    const product = await productos.getProductById(id)
+    res.render('productEdit', { product, cartId })
+}
+
 const editProduct = async (req, res) => {
+
+    if (!req.file) {
+        // productPic = product.urlImg
+        console.log("no");
+    } else {
+        console.log("si");
+        // let filePath = req.file.path
+        // let publicFilePath = filePath.substring(6)
+        // productPic = publicFilePath
+    }
+
+    // product = {
+    //     ...product,
+    //     urlImg: productPic,
+    //     author: userId
+    // }
+
     const id = req.params.id
     const productData = req.body
+    console.log("controller", productData);
     res.json(await productos.updateProduct(id, productData))
 }
 
@@ -82,5 +107,6 @@ module.exports = {
     getOnlyProducts,
     getNewProduct,
     getProductByCategory,
-    postProducts
+    postProducts,
+    getEditProduct
 }

@@ -44,7 +44,8 @@ class ProductsService {
                     rate: productGet.rating.rate,
                     count: productGet.rating.count
                 },
-                stock: productGet.stock
+                stock: productGet.stock,
+                category: productGet.category
             }
             return product
 

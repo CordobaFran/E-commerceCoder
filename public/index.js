@@ -12,7 +12,7 @@ deleteProduct.forEach(el => {
 
         let miModal = new bootstrap.Modal(document.getElementById('miModal'));
         miModal.show()
-        
+
         document.querySelector('#miModal .modal-footer .btn-primary').addEventListener('click', async () => {
             // Realizar la acción deseada
             await deleteRoute(href, {}, "DELETE")
@@ -28,7 +28,7 @@ editProduct.forEach(el => {
     el.addEventListener('click', (event) => {
         event.preventDefault()
         const href = document.getElementById(el.id).closest("a").getAttribute("href")
-        // window.location.href = "./"
+        window.location.href = `${href}/edit`
         console.log("edit", href);
     })
 })
@@ -47,7 +47,6 @@ const deleteRoute = async (url, body = {}, method = "DELETE") => {
         if (!response.ok) {
             throw new Error(`No se pudo realizar la accion ${response.status}`)
         } else {
-
             let toastLiveExample = document.getElementById('liveToast')
             let toast = new bootstrap.Toast(toastLiveExample)
             toast.show()
@@ -55,10 +54,56 @@ const deleteRoute = async (url, body = {}, method = "DELETE") => {
                 window.location.href = "/user"
             }, 3000);
         }
+
     } catch (error) {
         console.error(error);
     }
 }
+
+
+//form edit
+const form = document.forms.namedItem('editForm')
+form.addEventListener("submit", async (event)=>{
+    event.preventDefault()
+    const formData = new FormData(form)
+
+    const href = form.getAttribute("id")
+
+    const dataObj = {};
+    for (let [key, value] of formData.entries()) {
+        dataObj[key] = value;
+    }
+
+    const jsonData = JSON.stringify(dataObj);
+
+        try {
+        const options = {
+            method: "PUT",
+            headers: {
+               'Content-Type' : 'application/json'
+            },
+            body: jsonData
+        }
+
+        const response = await fetch(`/product/${href}/edit`, options)
+
+        if (!response.ok) {
+            throw new Error(`No se pudo realizar la accion ${response.status}`)
+        } else {
+            let toastLiveExample = document.getElementById('liveToast')
+            let toast = new bootstrap.Toast(toastLiveExample)
+            toast.show()
+            setTimeout(() => {
+                window.location.href = "/user"
+            }, 3000);
+        }
+
+    } catch (error) {
+        console.error(error);
+    }
+})
+
+
 
 //----Carritos----
 const renderCarts = (cartsData) => {

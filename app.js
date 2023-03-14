@@ -10,7 +10,6 @@ const cookieParser = require('cookie-parser')
 
 const handlebars = require('express-handlebars')
 
-
 //ROUTES PATHS
 const mainProducts = require('./src/routes/productos/main.routes.js')
 const routerLogin = require('./src/routes/login/login.routes')

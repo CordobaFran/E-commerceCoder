@@ -1,0 +1,61 @@
+<h1 class="my-4 text-center">Agregar Producto</h1>
+<form action="/products/new" enctype="multipart/form-data" class="bg-light bg-gradient py-3" method="post" >
+    <div class="container mt-5 shadow col-11 col-md-10">
+        <div class="row">
+            <section class="col-12 col-md-9 my-auto">
+                <div class="col-6 mb-3 mx-auto">
+                    <div class="text-center">
+                        <h2 for="inputAddress" class="form-label my-3 mx-auto text-center fw-bolder h4">Foto de producto</h2>
+                    </div>
+                    <input type="file" class="form-control" id="photoUpload" name="file" aria-describedby="userPhotoUpload">
+                    <label id="userPhotoUpload" class="form-text">subir foto de producto</label>
+                </div>
+                <div class="col-6 mb-3 mx-auto">
+                    <input type="text" class="form-control" id="photoUrl" name="urlImg" aria-describedby="userPhotoUrl">
+                    <label id="userPhotoUrl" class="form-text">o ingrese Link con foto de su producto</label>
+                </div>
+            </section>
+            <section class="col-12 col-md-3 border rounded">
+                <div class="col-auto mx-auto h5 my-3">
+                    <label for="product" id="labelProduct" class="form-text mb-2">Título de producto</label>
+                    <input type="text" name="product" class="form-control" aria-label="First name" id="product" required="true">
+                </div>
+                <div class="col-6 mx-auto my-3 h5">
+                    <label for="value" id="labelPrice" class="form-text mb-2">Precio</label>
+                    <input type="number" name="value" class="form-control" placeholder="$" aria-label="Valor" id="value" required="true">
+                </div>
+                <div>
+                    <div class="col-6 mx-auto mb-3 h5">
+                        <label for="stock" id="labelStock" class="form-text mb-2">Stock</label>
+                        <input  type="number" name="stock" class="form-control" aria-label="Valor" id="stock" required="true">
+                    </div>
+                    <div class="h5">
+                        <label for="category" id="labelCategory" class="form-text mb-2">Seleccione Categoría</label>
+                        <select type="number" name="category" class="form-select" aria-label="category" id="category" required="true">
+                            <option value="1" selected>Categoría 1</option>
+                            <option value="2">Categoría 2</option>
+                            <option value="3">Categoría 3</option>
+                            <option value="4">Categoría 4</option>
+                            <option value="5">Categoría 5</option>
+                            <option value="6">Categoría 6</option>
+                            <option value="7">Categoría 7</option>
+                            <option value="8">Categoría 8</option>
+                            <option value="9">Categoría 9</option>
+                            <option value="10">Categoría 10</option>
+                        </select>
+                    </div>
+                    <br></br>
+                    <button type="submit" class="btn btn-success my-3 w-100">Publicar Producto</button>
+                </div>
+            </section>
+        </div>
+        <div class="row mt-3">
+            <section class="col-12 border rounded">
+                <h2 class='my-3 mx-3'>Descripción</h2>
+                <div class="col-12 mx-auto my-5">
+                    <textarea type="text" name="detail" class="form-control" aria-label="description" id="detail" rows="4"></textarea>
+                </div>
+            </section>
+        </div>
+    </div>
+</form>

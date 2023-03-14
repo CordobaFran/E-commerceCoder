@@ -15,10 +15,11 @@ router.get("/product/category", getProductByCategory)
 
 router.get("/product/:id", getProductId)
 
+router.put("/product/:id", editProduct)
+
+router.delete("/product/:id", deleteProduct)
+
 router.get("/", getProducts)
 
-router.put("/:id", editProduct)
-
-router.delete("/:id", deleteProduct)
 
 module.exports = router

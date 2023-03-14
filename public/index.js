@@ -1,6 +1,65 @@
 const socket = io.connect()
 let denormalizado
 
+// ----------------------  PRODUCTS EDIT AND DELETE ------------------------
+
+
+const deleteProduct = document.querySelectorAll(`.product__delete`)
+deleteProduct.forEach(el => {
+    el.addEventListener('click', async (event) => {
+        event.preventDefault()
+        const href = document.getElementById(el.id).closest("a").getAttribute("href")
+
+        let miModal = new bootstrap.Modal(document.getElementById('miModal'));
+        miModal.show()
+        
+        document.querySelector('#miModal .modal-footer .btn-primary').addEventListener('click', async () => {
+            // Realizar la acción deseada
+            await deleteRoute(href, {}, "DELETE")
+            miModal.hide()
+        });
+
+        console.log("delete", href);
+    })
+})
+
+const editProduct = document.querySelectorAll(`.product__edit`)
+editProduct.forEach(el => {
+    el.addEventListener('click', (event) => {
+        event.preventDefault()
+        const href = document.getElementById(el.id).closest("a").getAttribute("href")
+        // window.location.href = "./"
+        console.log("edit", href);
+    })
+})
+
+const deleteRoute = async (url, body = {}, method = "DELETE") => {
+
+    try {
+        const options = {
+            method: method,
+            headers: {},
+            body: JSON.stringify(body)
+        }
+
+        const response = await fetch(url, options)
+
+        if (!response.ok) {
+            throw new Error(`No se pudo realizar la accion ${response.status}`)
+        } else {
+
+            let toastLiveExample = document.getElementById('liveToast')
+            let toast = new bootstrap.Toast(toastLiveExample)
+            toast.show()
+            setTimeout(() => {
+                window.location.href = "/user"
+            }, 3000);
+        }
+    } catch (error) {
+        console.error(error);
+    }
+}
+
 //----Carritos----
 const renderCarts = (cartsData) => {
 
@@ -88,93 +147,3 @@ socket.on('messages-sv', data => {
 })
 
 
-//------------------------ Function to add product by socket -------------------------------
-// const addProduct = () => {
-//     const newProduct = {
-//         "product": document.getElementById("product").value,
-//         "value": document.getElementById("value").value,
-//         "urlImg": document.getElementById("urlImg").value
-//     }
-//     socket.emit('add-product', newProduct)
-
-//     return false
-// }
-
-
-//------------------------ Renderizado de productos en tiempo real -------------------------------
-
-// const renderProducts = (data) => {
-//     if (data) {
-//         const html = data.map((el) => {
-//             if (el.urlImg == null || el.urlImg == "") {
-//                 return (`
-//                 <a href=${el._id}>
-//                     <tr>
-//                         <td class="px-5">
-//                             <a href=/product/${el._id}>
-//                                 ${el.product}
-//                             </a>
-//                         </td>
-//                         <td class="px-5">
-//                             ${el.value}
-//                         </td>
-//                         <td class="px-5">
-//                             <img src="${"https://ferreteriaelpuente.com.ar/wp-content/uploads/2015/08/sin-imagen.png"}" class="h-auto" style="object-fit: cover; width: 75px;">
-//                         </td>
-//                     </tr>
-//                 </a>
-//                 `)
-//             } else {
-//                 return (`
-//                 <tr>
-//                     <td class="px-5">
-//                         <a href=/product/${el._id}>
-//                             ${el.product}
-//                         </a>
-//                     </td>
-//                         <td class="px-5">
-//                             ${el.value}
-//                         </td>
-//                         <td class="px-5">
-//                             <img src="${el.urlImg}" class="h-auto" style="object-fit: cover; width: 75px;">
-//                         </td>
-//                 </tr>
-//                 `)
-//             }
-//         }).join(" ")
-//         if (document.getElementById('products')) {
-//             document.getElementById('products').innerHTML = html
-//         }
-//     } else {
-//         console.warn("No hay productos")
-//     }
-// }
-
-// socket.on("products-sv", data => {
-//     renderProducts(data)
-// })
-
-// ---------------------- PUSH NEW MSJ TO MSJS ------------------------
-
-// const pushNewMsg = (newMsg) => {
-//     const denormalizedMsgs = denormalizado.posts[0].messages
-//     const lastId = denormalizedMsgs[denormalizedMsgs.length - 1].id + 1
-//     newMsg = { id: lastId, ...newMsg }
-//     return newMsg
-// }
-
-// ---------------------- SCHEMA NORMALIZR ------------------------
-
-// const user = new normalizr.schema.Entity('users', {}, { idAttribute: "email" })
-// const message = new normalizr.schema.Entity('messages')
-// const comment = new normalizr.schema.Entity('comments', {
-//     author: user,
-//     messages: message
-// })
-// const article = new normalizr.schema.Entity('articles', {
-//     author: user,
-//     messages: [comment]
-// })
-// const post = new normalizr.schema.Entity('posts', {
-//     posts: [article]
-// })

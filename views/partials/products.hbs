@@ -18,10 +18,20 @@
                         </tr> --}}
                             <a href="/product/{{id}}" class="text-decoration-none text-reset product-box">
                                 <div class="row m-auto border rounded my-2 d-flex p-3 product-box">
-                                    <div class="col-lg-4 fw-bolder align-self-center">{{title}}</div>
-                                    <div class="col-lg-4 text-center fw-bolder align-self-center">$ {{price}}</div>
-                                    <div class="col-lg-4 mx-auto align-self-center" style="width: 100px">
+                                    <div class="col-lg-3 fw-bolder align-self-center">{{title}}</div>
+                                    <div class="col-lg-3 text-center fw-bolder align-self-center">$ {{price}}</div>
+                                    <div class="col-lg-2 mx-auto align-self-center" style="width: 100px">
                                         <img class="img-fluid" src="{{img}}" alt="{{id}}" style="object-fit: cover;"></img>
+                                    </div>
+                                    <div class="col-lg-4 fw-bolder align-self-center">
+                                        <div class="d-flex flex-row-reverse" id="{{id}}">
+                                            <button type="button" class="btn btn-danger mx-1 product__delete" id="product__delete-{{id}}">
+                                                <img src="./resources/product-delete.svg" alt="delete" style="object-fit: cover; width: 20px;">
+                                            </button>
+                                            <button type="button" class="btn btn-warning mx-1 product__edit" id="product__edit-{{id}}">
+                                                <img src="./resources/product-edit.svg" alt="delete" style="object-fit: cover; width: 20px;">
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -34,4 +44,34 @@
                 <p>No se encontraron productos</p>
             </div>
         {{/if}}
+</div>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Producto Eliminado</strong>
+      {{!-- <small>11 mins ago</small> --}}
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Su producto ha sido eliminado.
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="miModalLabel">Mi modal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Contenido del modal.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
 </div>

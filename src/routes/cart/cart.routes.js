@@ -4,9 +4,9 @@ const router = Router()
 const { cartsAll, cartId, cartCheckout, cartAddproduct } = require('../../controller/carts.controller')
 
 //Momentaneamente esta ruta esta para desarrollo
-router.get('/', cartsAll)
+router.get('/all', cartsAll)
 
-router.get('/:id', cartId)
+router.get('/', cartId)
 
 router.put('/:id', cartAddproduct)
 

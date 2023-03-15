@@ -20,11 +20,13 @@ const cartsAll = async (req, res) => {
 
 const cartId = async (req, res) => {
     let cartExists = false
+    
+    const id = req.user.cartId
+    const { productsFull } = await cart.getCartById(id)
 
-    const id = req.params.id
-    const cartById = await cart.getCartById(id)
-    const products = (cartById.productos);
-    await !cartById ? cartExists = false : cartExists = true
+    const products = productsFull
+    await !productsFull ? cartExists = false : cartExists = true
+    // console.log(await products);
 
     res.render('userCart', await { cartExists, id, products })
     // res.json(cartById)

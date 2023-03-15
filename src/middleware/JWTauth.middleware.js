@@ -8,9 +8,10 @@ async function auth(req, res, next) {
     // console.log(authHeader);
 
     if (!authHeader) {
-        return res.status(401).json({
-            error: 'not authenticated'
-        })
+        // return res.status(401).json({
+        //     error: 'not authenticated'
+        // })
+        return res.status(402).redirect('/auth/login')
     }
 
     const token = authHeader
@@ -35,7 +36,7 @@ async function auth(req, res, next) {
             alias: req.user.username,
             avatar: req.user.profilePicture
         }
-        
+
 
         res.cookie('userChat', JSON.stringify(userChat))
 

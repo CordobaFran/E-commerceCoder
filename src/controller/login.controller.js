@@ -5,8 +5,9 @@ const { generateToken } = require('../middleware/JWTgenerate.middleware')
 
 const loginRootGet = async (req, res) => {
     // console.log(req.header('authorization'));
+    const loginView = true
     res.clearCookie('authorization')
-    res.render('login')
+    res.render('login', { loginView })
 }
 
 const loginUsernamePost = async (req, res) => {

@@ -1,9 +1,11 @@
 const { loggerError } = require('../utils/logger')
 const CartsDAOs = require('../daos/carritosFactory')
+const ProductsDaos = require('../daos/productosFactory')
 
 class CartsService {
     constructor() {
         this.cartsDAOs = new CartsDAOs()
+        this.productsDaos = new ProductsDaos
     }
 
     async getAllCarts() {
@@ -18,7 +20,22 @@ class CartsService {
     async getCartById(id) {
         try {
             const cart = await this.cartsDAOs.getById(id)
-            return cart
+            const productsArray = cart.productos.map(async el => {
+
+                const product = await this.productsDaos.getById(el.productId)
+                const productNew = {
+                    id: product._id,
+                    product:  product.product,
+                    value:  product.value,
+                    urlImg:  product.urlImg,
+                    qty: el.qty
+                }
+                return productNew
+
+            })
+
+            const productsFull = await Promise.all(productsArray)
+            return { cart, productsFull }
 
         } catch (error) {
             loggerError.error(error)
@@ -44,7 +61,7 @@ class CartsService {
         let cart = await this.getCartById(id)
         let products = cart.productos
 
-        if (action === "add"){
+        if (action === "add") {
             const productsModified = [...products, productId]
             cart.productos = productsModified
 

@@ -71,23 +71,6 @@ const getEditProduct = async (req, res) => {
 }
 
 const editProduct = async (req, res) => {
-
-    if (!req.file) {
-        // productPic = product.urlImg
-        console.log("no");
-    } else {
-        console.log("si");
-        // let filePath = req.file.path
-        // let publicFilePath = filePath.substring(6)
-        // productPic = publicFilePath
-    }
-
-    // product = {
-    //     ...product,
-    //     urlImg: productPic,
-    //     author: userId
-    // }
-
     const id = req.params.id
     const productData = req.body
     console.log("controller", productData);

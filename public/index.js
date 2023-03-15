@@ -62,46 +62,49 @@ const deleteRoute = async (url, body = {}, method = "DELETE") => {
 
 
 //form edit
+
 const form = document.forms.namedItem('editForm')
-form.addEventListener("submit", async (event)=>{
-    event.preventDefault()
-    const formData = new FormData(form)
+if (form) {
+    form.addEventListener("submit", async (event) => {
+        event.preventDefault()
+        const formData = new FormData(form)
 
-    const href = form.getAttribute("id")
+        const href = form.getAttribute("id")
 
-    const dataObj = {};
-    for (let [key, value] of formData.entries()) {
-        dataObj[key] = value;
-    }
+        const dataObj = {};
+        for (let [key, value] of formData.entries()) {
+            dataObj[key] = value;
+        }
 
-    const jsonData = JSON.stringify(dataObj);
+        const jsonData = JSON.stringify(dataObj);
 
         try {
-        const options = {
-            method: "PUT",
-            headers: {
-               'Content-Type' : 'application/json'
-            },
-            body: jsonData
+            const options = {
+                method: "PUT",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: jsonData
+            }
+
+            const response = await fetch(`/product/${href}/edit`, options)
+
+            if (!response.ok) {
+                throw new Error(`No se pudo realizar la accion ${response.status}`)
+            } else {
+                let toastLiveExample = document.getElementById('liveToast')
+                let toast = new bootstrap.Toast(toastLiveExample)
+                toast.show()
+                setTimeout(() => {
+                    window.location.href = "/user"
+                }, 3000);
+            }
+
+        } catch (error) {
+            console.error(error);
         }
-
-        const response = await fetch(`/product/${href}/edit`, options)
-
-        if (!response.ok) {
-            throw new Error(`No se pudo realizar la accion ${response.status}`)
-        } else {
-            let toastLiveExample = document.getElementById('liveToast')
-            let toast = new bootstrap.Toast(toastLiveExample)
-            toast.show()
-            setTimeout(() => {
-                window.location.href = "/user"
-            }, 3000);
-        }
-
-    } catch (error) {
-        console.error(error);
-    }
-})
+    })
+}
 
 
 
@@ -146,7 +149,6 @@ const sendMessage = () => {
 // you are the user who sent the msg
 const renderMessages = (data) => {
     let ownMsg
-
     if (document.getElementById('messages')) {
         const html = data.msgs.map((el) => {
             if (el.author.id == data.userId) {

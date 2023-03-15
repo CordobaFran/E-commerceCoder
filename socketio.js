@@ -26,7 +26,6 @@ io.on('connection', async socket => {
 
     socket.on("new-message", async (data) => {
         await msgs.createMsgs(await userNewMsg(socket.handshake.headers.cookie, data))
-
         io.sockets.emit("messages-sv", await msgs.getAllMsgs()) // render msg after new msg
     })
 
@@ -72,6 +71,7 @@ const userId = (cookies) => {
                 .split('=')[1];
 
             const userChatObj = JSON.parse(decodeURIComponent(userChatCookie))
+            console.log(userChatObj);
 
             return userChatObj.id
 

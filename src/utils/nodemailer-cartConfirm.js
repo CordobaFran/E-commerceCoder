@@ -22,10 +22,10 @@ async function nodeMailerCart(sellData) {
     const { username, email, products } = sellData
 
     const productsToMail = products.map(el => {
-        const { producto, qty } = el
+        const { product, qty } = el
         return `
             <li>
-                ${producto}: ${qty} unidades
+                ${product}: ${qty} unidades
             </li> 
     `
     }).join(" ")

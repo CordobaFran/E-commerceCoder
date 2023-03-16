@@ -37,8 +37,8 @@ async function twilioWsap(sellData) {
     const { username, email, products } = sellData
 
     const productsToWsp = products.map(el => {
-        const { producto, qty } = el
-        return `${producto}: ${qty} unidades`
+        const { product, qty } = el
+        return `${product}: ${qty} unidades`
     }).join("\n\t\t\t\t\t\t\t\t")
 
     if (wsapActivated) {

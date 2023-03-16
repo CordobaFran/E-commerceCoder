@@ -1,7 +1,11 @@
 // const Carritos = require('../daos/carritosDao')
 const { child } = require('winston')
+
 const { CartsService } = require ('../service/carts.service')
 const cart = new CartsService('carritos')
+
+const { ProductsService } = require('../service/products.service')
+const productos = new ProductsService()
 
 const nodeMailerCart = require('../utils/nodemailer-cartConfirm')
 
@@ -26,7 +30,6 @@ const cartId = async (req, res) => {
 
     const products = productsFull
     await !productsFull ? cartExists = false : cartExists = true
-    // console.log(await products);
 
     res.render('userCart', await { cartExists, id, products })
     // res.json(cartById)
@@ -39,12 +42,18 @@ const cartAddproduct = async (req, res) => {
     res.json({msj: "product added"})
 }
 
-const cartCheckout = async (req, res) => {
-    const { username, email } = req.user
-    const id = req.params.id
-    const cartById = await cart.getCartById(id)
+const cartDeleteproduct = async (req, res) => {
+    const cartId = req.user.cartId
+    const productId = req.params.id
+    await cart.updateCart(cartId, productId, "delete")
+    res.json({msj: "product deleted"})
+}
 
-    const products = cartById.productos
+const cartCheckout = async (req, res) => {
+    const { username, email, cartId } = req.user
+    const { productsFull } = await cart.getCartById(cartId)
+
+    const products = productsFull
 
     const sellData = {
         username,
@@ -56,9 +65,10 @@ const cartCheckout = async (req, res) => {
     twilioWsap(sellData)
     twilioSms(sellData)
 
-    // await cart.deleteCart(id)
+    await cart.updateCart(cartId, [], "deleteAll")
 
-    res.json({ msj: "checkout Ok" })
+    res.redirect('/')
+    // res.json({ msj: "checkout Ok" })
 }
 
 
@@ -66,5 +76,6 @@ module.exports = {
     cartsAll,
     cartId,
     cartCheckout,
-    cartAddproduct
+    cartAddproduct,
+    cartDeleteproduct
 }

@@ -796,3 +796,16 @@
 ( 2023-03-15 18:21:54 ) error : Cannot read properties of undefined (reading 'split')
 ( 2023-03-15 18:22:05 ) error : Cannot read properties of undefined (reading 'split')
 ( 2023-03-16 00:26:21 ) error : Error con codigo: 1
+( 2023-03-16 03:43:37 ) error : Cannot read properties of null (reading '_id')
+( 2023-03-16 04:47:03 ) error : Cannot read properties of null (reading '_id')
+( 2023-03-16 05:18:56 ) error : Error con codigo: 1
+( 2023-03-16 06:04:44 ) error : Error con codigo: 1
+( 2023-03-16 06:10:19 ) error : Error con codigo: 1
+( 2023-03-16 06:10:56 ) error : Error con codigo: 1
+( 2023-03-16 06:11:55 ) error : Error con codigo: 1
+( 2023-03-16 06:15:28 ) error : Error con codigo: 1
+( 2023-03-16 06:17:10 ) error : Error con codigo: 1
+( 2023-03-16 06:17:54 ) error : Error con codigo: 1
+( 2023-03-16 06:18:34 ) error : Error con codigo: 1
+( 2023-03-16 06:24:42 ) error : Authenticate
+( 2023-03-16 06:24:42 ) error : Authenticate

@@ -1,6 +1,51 @@
 const socket = io.connect()
 let denormalizado
 
+// ----------------------  CART PRODUCT DELETE ------------------------
+
+const deleteProductCart = document.querySelectorAll(`.product__delete__cart`)
+deleteProductCart.forEach(el => {
+    el.addEventListener('click', async (event) => {
+        event.preventDefault()
+        const href = document.getElementById(el.id).closest("a").getAttribute("href")
+
+        let miModal = new bootstrap.Modal(document.getElementById('miModal'));
+        miModal.show()
+
+        document.querySelector('#miModal .modal-footer .btn-danger').addEventListener('click', async () => {
+            // Realizar la acción deseada
+            await deleteRouteCart(`/cart${href}`, {}, "DELETE")
+            miModal.hide()
+        });
+    })
+})
+
+const deleteRouteCart = async (url, body = {}, method = "DELETE") => {
+
+    try {
+        const options = {
+            method: method,
+            headers: {},
+            body: JSON.stringify(body)
+        }
+
+        const response = await fetch(url, options)
+        if (!response.ok) {
+            throw new Error(`No se pudo realizar la accion ${response.status}`)
+        } else {
+            let toastLiveExample = document.getElementById('liveToast')
+            let toast = new bootstrap.Toast(toastLiveExample)
+            toast.show()
+            setTimeout(() => {
+                window.location.href = "/cart"
+            }, 3000);
+        }
+
+    } catch (error) {
+        console.error(error);
+    }
+}
+
 // ----------------------  PRODUCTS EDIT AND DELETE ------------------------
 
 

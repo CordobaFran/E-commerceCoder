@@ -19,7 +19,7 @@ class CartsService {
 
     async getCartById(id) {
         try {
-            const cart = await this.cartsDAOs.getById(id)
+            const cart = await this.cartsDAOs.getById(id)      
             const productsArray = cart.productos.map(async el => {
 
                 const product = await this.productsDaos.getById(el.productId)
@@ -33,8 +33,8 @@ class CartsService {
                 return productNew
 
             })
-
             const productsFull = await Promise.all(productsArray)
+
             return { cart, productsFull }
 
         } catch (error) {
@@ -64,10 +64,14 @@ class CartsService {
         if (action === "add") {
             const productsModified = [...products, productId]
             cart.productos = productsModified
-
-        } else {
-            const indexOfProduct = products.indexOf(productId)
+        
+        } else if (action === "delete") {
+            const indexOfProduct = products.findIndex( el => el.productId === productId
+            )
             indexOfProduct > -1 ? products.splice(indexOfProduct, 1) : null
+        } else {
+            cart.productos = []
+
         }
 
         try {

@@ -1,34 +1,63 @@
 <section class="m-4">
-    {{#if cartExists}}
-            <h1 class="my-5 text-center">Carrito {{id}}</h1>
-            <table class="table text-center">
-                <thead>
-                    <tr>
-                        <th scope="col" class="px-5">Nombre</th>
-                        <th scope="col" class="px-5">Precio</th>
-                        <th scope="col" class="px-5">Cantidad</th>
-                        <th scope="col" class="px-5">Imagen</th>
-                    </tr>
-                </thead>
-                <tbody id="cartProducts">
-                    {{#each products}}
-                            <tr>
-                                <th scope="col" class="px-5">{{product}}</th>
-                                <th scope="col" class="px-5">{{value}}</th>
-                                <th scope="col" class="px-5">{{qty}}</th>
-                                <th scope="col" class="px-5">
-                                    <img src="{{urlImg}}" alt="img-{{product}}" style="width: 100px">
-                                </th>
-                            </tr>
-                    {{/each}}
-                </tbody>
-            </table>
-            <form class="text-center mt-5" action="./{{id}}" method="post">
-                <button type="submit" class="btn btn-primary">Confirmar Compra</button>
-            </form>
-        {{else}}
-            <div class="alert alert-danger" role="alert">
-                <p>No se encontraron productos</p>
+    {{#if products}}
+    <h1 class="my-5 text-center">Carrito {{id}}</h1>
+        <div class="container" id="cartProducts">
+            {{#each products}}
+            <a href="/product/{{id}}" class="text-decoration-none text-reset product-box">
+                <div class="row m-auto border rounded my-2 d-flex p-3 product-box">
+                    <div class="col-lg-2 mx-auto align-self-center" style="width: 100px">
+                        <img class="img-fluid" src="{{urlImg}}" alt="{{id}}" style="object-fit: cover;"></img>
+                    </div>
+                    <div class="col-lg-3 fw-bolder align-self-center">{{product}}</div>
+                    <div class="col-lg-2 text-center fw-bolder align-self-center">$ {{value}}</div>
+                    <div class="col-lg-2 text-center fw-bolder align-self-center"> Cant: {{qty}}</div>
+                    <div class="col-lg-2 fw-bolder align-self-center">
+                        <div class="d-flex flex-row-reverse" id="{{id}}">
+                            <button type="button" class="btn btn-danger mx-1 product__delete__cart" id="product__delete__cart-{{id}}">
+                                <img src="./resources/product-delete.svg" alt="delete" style="object-fit: cover; width: 20px;">
+                            </button>
+                        </div>
+                    </div>               
+                </div>
+            </a>
+            {{/each}}
+        </div>
+    <form class="text-center mt-5" action="./cart/{{id}}" method="post">
+        <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+    </form>
+    {{else}}
+    <div class="alert alert-danger" role="alert">
+        <p class="h3 text-center">No has agregado productos al carrito</p>
+    </div>
+    {{/if}}
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+            {{!-- <img src="..." class="rounded me-2" alt="..."> --}}
+                <strong class="me-auto">Producto Eliminado</strong>
+                {{!-- <small>11 mins ago</small> --}}
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
-        {{/if}}
+            <div class="toast-body">
+                Su producto ha sido eliminado del carrito.
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="miModalLabel">Eliminar producto del Carrito</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ¿Desea eliminar el producto del carrito definitivamente?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger">Eliminar</button>
+            </div>
+            </div>
+        </div>
+    </div>
 </section>

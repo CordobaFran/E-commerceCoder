@@ -25,9 +25,9 @@ class CartsService {
                 const product = await this.productsDaos.getById(el.productId)
                 const productNew = {
                     id: product._id,
-                    product:  product.product,
-                    value:  product.value,
-                    urlImg:  product.urlImg,
+                    product: product.product,
+                    value: product.value,
+                    urlImg: product.urlImg,
                     qty: el.qty
                 }
                 return productNew
@@ -58,7 +58,7 @@ class CartsService {
 
     async updateCart(id, productId, action) {
 
-        let cart = await this.getCartById(id)
+        let { cart } = await this.getCartById(id)
         let products = cart.productos
 
         if (action === "add") {

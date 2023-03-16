@@ -795,3 +795,4 @@
 ( 2023-03-15 18:19:46 ) error : Cannot read properties of undefined (reading 'split')
 ( 2023-03-15 18:21:54 ) error : Cannot read properties of undefined (reading 'split')
 ( 2023-03-15 18:22:05 ) error : Cannot read properties of undefined (reading 'split')
+( 2023-03-16 00:26:21 ) error : Error con codigo: 1

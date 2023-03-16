@@ -18,8 +18,6 @@ deleteProduct.forEach(el => {
             await deleteRoute(href, {}, "DELETE")
             miModal.hide()
         });
-
-        console.log("delete", href);
     })
 })
 
@@ -29,7 +27,6 @@ editProduct.forEach(el => {
         event.preventDefault()
         const href = document.getElementById(el.id).closest("a").getAttribute("href")
         window.location.href = `${href}/edit`
-        console.log("edit", href);
     })
 })
 

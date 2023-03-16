@@ -71,7 +71,6 @@ const userId = (cookies) => {
                 .split('=')[1];
 
             const userChatObj = JSON.parse(decodeURIComponent(userChatCookie))
-            console.log(userChatObj);
 
             return userChatObj.id
 

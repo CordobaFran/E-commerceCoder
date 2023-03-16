@@ -73,7 +73,6 @@ const getEditProduct = async (req, res) => {
 const editProduct = async (req, res) => {
     const id = req.params.id
     const productData = req.body
-    console.log("controller", productData);
     res.json(await productos.updateProduct(id, productData))
 }
 

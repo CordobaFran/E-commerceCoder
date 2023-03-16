@@ -1,6 +1,7 @@
 <div class="container w-50 border mt-5 shadow rounded">
     <h1 class="mt-5 mx-5 h3 text-left">Register</h1>
     <form class="m-5" action="./register" enctype="multipart/form-data" method="post">
+        
         <div class="mb-3">
             <label for="username" class="form-label">Username</label>
             <input type="text" class="form-control" id="username" name="username" aria-describedby="userHelp" value="admin" required="true">
@@ -13,8 +14,13 @@
         </div>
         <div class="mb-3">
             <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" name="password" aria-describedby="passHelp" value="admin" >
+            <input type="password" class="form-control" id="password" name="password" aria-describedby="passHelp">
             <div id="passHelp" class="form-text">Ingrese su una contraseña</div>
+        </div>
+        <div class="mb-3">
+            <label for="passwordConfirm" class="form-label">Confirmar Password</label>
+            <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm" aria-describedby="passHelp">
+            <div id="passConfirmHelp" class="form-text">Vuelva a ingresar su contraseña</div>
         </div>
         <div class="row">
             <div class="col-5 mb-3">

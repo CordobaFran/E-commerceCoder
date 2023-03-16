@@ -5,12 +5,13 @@ const nodeMailer = require('../utils/nodemailer')
 const { createHash } = require('../middleware/passport.middleware')
 
 const registerRootGet = async (req, res) => {
-    res.render('register')
+    const loginView = true
+    res.render('register', { loginView })
 }
 
 const registerPost = async (req, res) => {
 
-    const { username, password, email, admin, name, age, phoneNumber, address, profileUrl } = req.body
+    const { username, password, passwordConfirm ,email, admin, name, age, phoneNumber, address, profileUrl } = req.body
 
     if (!req.file) {
         profilePicture = profileUrl
@@ -33,6 +34,18 @@ const registerPost = async (req, res) => {
         `
         return res.send(error)
         // res.end()
+    }
+
+    if (password !== passwordConfirm){
+
+        const error = `
+        <div style="margin: 20px">
+            <h1>Password confirm wrong</h1>
+            <p>Password confirm is incorrect. Please Retry</p>
+            <a href="javascript:window.history.back()"> Back to Register</a>
+        </div>
+        `
+        return res.send(error)
     }
 
     const newUser = {

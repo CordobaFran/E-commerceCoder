@@ -809,3 +809,25 @@
 ( 2023-03-16 06:18:34 ) error : Error con codigo: 1
 ( 2023-03-16 06:24:42 ) error : Authenticate
 ( 2023-03-16 06:24:42 ) error : Authenticate
+( 2023-03-17 03:15:01 ) error : Error con codigo: 1
+( 2023-03-17 03:15:29 ) error : Error con codigo: 1
+( 2023-03-17 03:15:49 ) error : Cannot read properties of null (reading 'productos')
+( 2023-03-17 03:46:06 ) error : Error con codigo: 1
+( 2023-03-17 03:47:05 ) error : Error con codigo: 1
+( 2023-03-17 03:48:04 ) error : Error con codigo: 1
+( 2023-03-17 03:48:21 ) error : Cannot read properties of null (reading 'productos')
+( 2023-03-17 03:50:21 ) error : Cannot read properties of null (reading 'productos')
+( 2023-03-17 03:50:42 ) error : Cannot read properties of null (reading 'productos')
+( 2023-03-17 04:29:35 ) error : Cast to ObjectId failed for value "1" (type string) at path "_id" for model "orders"
+( 2023-03-17 04:32:04 ) error : Error con codigo: 1
+( 2023-03-17 04:32:47 ) error : Error con codigo: 1
+( 2023-03-17 04:34:00 ) error : Error con codigo: 1
+( 2023-03-17 04:35:12 ) error : Error con codigo: 1
+( 2023-03-17 04:37:37 ) error : Error con codigo: 1
+( 2023-03-17 04:38:11 ) error : Error con codigo: 1
+( 2023-03-17 04:40:58 ) error : Error con codigo: 1
+( 2023-03-17 04:41:22 ) error : Error con codigo: 1
+( 2023-03-17 04:42:56 ) error : Error con codigo: 1
+( 2023-03-17 04:43:11 ) error : Error con codigo: 1
+( 2023-03-17 04:43:24 ) error : Error con codigo: 1
+( 2023-03-17 04:43:48 ) error : Error con codigo: 1

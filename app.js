@@ -18,7 +18,7 @@ const routerInfo = require('./src/routes/info/info.routes')
 const routerCart = require('./src/routes/cart/cart.routes')
 const apiMockProducts = require('./src/routes/apiMock/apiMock.routes')
 const userRoute = require('./src/routes/user/user.routes')
-
+const orderRoute = require('./src/routes/order/order.routes')
 
 const { passport } = require('./src/middleware/passport.middleware')
 const { checkAuth } = require('./src/middleware/checkAuth.middleware.js')
@@ -76,6 +76,7 @@ app.use('/cart', auth, routerCart)
 app.use('/user', auth,  userRoute)
 app.use('/', auth, routerInfo)
 app.use('/', auth, mainProducts)
+app.use('/', auth, orderRoute)
 // app.use('/', mainProducts)
 
 module.exports = app

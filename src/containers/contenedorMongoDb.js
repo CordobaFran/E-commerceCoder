@@ -6,6 +6,7 @@ const { ProductsModel } = require('../models/products')
 const { CartsModel } = require('../models/carts')
 const { UsersModel } = require('../models/users')
 const { MsgsModel } = require('../models/msgs.js')
+const { ordersModel } = require('../models/orders.js')
 
 
 class Products {
@@ -18,17 +19,26 @@ class Products {
             return this.connect()
         }
 
-        if (collection === 'carritos') {
-            this.Model = CartsModel
+        switch (collection) {
+            case "carritos":
+                this.Model = CartsModel
+                break;
 
-        } else if (collection === 'users') {
-            this.Model = UsersModel
+            case "users":
+                this.Model = UsersModel
+                break;
 
-        } else if (collection === 'msgs') {
-            this.Model = MsgsModel
+            case "msgs":
+                this.Model = MsgsModel
+                break;
 
-        } else {
-            this.Model = ProductsModel
+            case "orders":
+                this.Model = ordersModel
+                break;
+
+            default:
+                this.Model = ProductsModel
+                break;
         }
     }
 
@@ -51,11 +61,11 @@ class Products {
             const newItem = new this.Model(item)
 
             const itemSave = await newItem.save()
-            .then((item)=>{
-                return item._id;
-            }).catch((error)=>{
-                loggerError.error(error)
-            })
+                .then((item) => {
+                    return item._id;
+                }).catch((error) => {
+                    loggerError.error(error)
+                })
 
             loggerWarn.warn(` ${this.collection} added`);
             return { status: ` ${this.collection} added`, id: itemSave }

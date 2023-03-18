@@ -8,4 +8,10 @@ module.exports = class OrdersDaoMongoDb extends ContenedorMongoDb {
     async getByOrderNum(num) {
         return await this.Model.findOne({ orderNum: num })
     }
+
+    async createOrderNumDaos() {
+        return await this.Model.findOne({},{},{ sort: { 'date': -1 } }, (err, lastDoc) => {
+            return lastDoc
+        }).clone()
+    }
 }

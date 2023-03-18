@@ -16,9 +16,8 @@ class OrderService {
     }
 
     async createOrder(data) {
-        let orderId = 0
+        let orderId = await this.createOrderNum()
 
-        orderId == 0 ? orderId += 1 : orderId = 0
         const { productsFull } = await this.cartsService.getCartById(data.cartId)
         const remapProductsFull = await productsFull.map((el) => {
             return {
@@ -45,7 +44,7 @@ class OrderService {
             }).catch((error) => {
                 loggerError.error(error)
             })
-           
+
         return createOrder
     }
 
@@ -53,7 +52,6 @@ class OrderService {
         const { username, email, cartId } = data
 
         const { productsFull } = await this.cartsService.getCartById(cartId)
-        const products = productsFull
 
         const orderCreate = await this.createOrder(data)
         orderCreate
@@ -63,7 +61,7 @@ class OrderService {
         const sellData = {
             username,
             email,
-            products
+            products: productsFull
         }
 
         nodeMailerCart(sellData)
@@ -73,6 +71,18 @@ class OrderService {
         await this.cartsService.updateCart(cartId, [], "deleteAll")
 
         return orderNum
+    }
+
+    async createOrderNum() {
+        try {
+            const lastOrder = await this.ordersDAOs.createOrderNumDaos()
+            let order = lastOrder.orderNum + 1
+            return order
+        } catch (error) {
+            loggerError.error(error)
+            return 0
+        }
+        
     }
 }
 

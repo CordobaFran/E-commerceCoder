@@ -831,3 +831,24 @@
 ( 2023-03-17 04:43:11 ) error : Error con codigo: 1
 ( 2023-03-17 04:43:24 ) error : Error con codigo: 1
 ( 2023-03-17 04:43:48 ) error : Error con codigo: 1
+( 2023-03-17 10:30:42 ) error : Error con codigo: 1
+( 2023-03-17 10:31:51 ) error : Error con codigo: 1
+( 2023-03-17 10:32:23 ) error : Error con codigo: 1
+( 2023-03-18 03:25:40 ) error : Error con codigo: 1
+( 2023-03-18 03:47:25 ) error : Error con codigo: 1
+( 2023-03-18 03:48:02 ) error : Error con codigo: 1
+( 2023-03-18 03:50:11 ) error : Error con codigo: 1
+( 2023-03-18 03:50:24 ) error : Error con codigo: 1
+( 2023-03-18 03:52:40 ) error : orders validation failed: orderNum: Cast to Number failed for value "Promise { 2 }" (type Promise) at path "orderNum"
+( 2023-03-18 03:52:40 ) error : Cannot read properties of null (reading 'orderNum')
+( 2023-03-18 03:52:40 ) error : Error con codigo: 1
+( 2023-03-18 03:53:10 ) error : Error con codigo: 1
+( 2023-03-18 04:56:31 ) error : Error con codigo: 1
+( 2023-03-18 04:58:11 ) error : Error con codigo: 1
+( 2023-03-18 04:58:52 ) error : Error con codigo: 1
+( 2023-03-18 05:00:05 ) error : Cannot read properties of null (reading 'orderNum')
+( 2023-03-18 05:05:44 ) error : Error con codigo: 1
+( 2023-03-18 05:07:25 ) error : Error con codigo: 1
+( 2023-03-18 05:07:53 ) error : Error con codigo: 1
+( 2023-03-18 05:10:02 ) error : Error con codigo: 1
+( 2023-03-18 05:29:53 ) error : Error con codigo: 1
